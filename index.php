@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>crdx.org</title>
+        <meta charset='utf-8' />
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-35469939-3']);
