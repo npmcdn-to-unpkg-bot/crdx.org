@@ -1,7 +1,0 @@
-*.html         text=auto
-*.md           text=auto
-*.php          text=auto
-*.js           text=auto
-*.css          text=auto
-.gitignore     text=auto
-.gitattributes text=auto
