@@ -1,0 +1,46 @@
+---
+layout: default
+name: cookies
+menu: misc
+disqus_id: page-1
+
+title: cookies
+---
+
+<script type="text/javascript">
+  {% include cookies.js %}
+</script>
+
+<h3 class="underline">{{ page.title }}</h3>
+
+<p>Converts <code>document.cookie</code> into a Netscape-format cookies file which is (among other things) suitable for use with <a href="http://www.gnu.org/software/wget">wget</a>, e.g:</p>
+
+<pre>wget --load-cookies cookies.txt http://example.org</pre>
+
+<p><b>Note</b>: line breaks and other whitespace in the input don't matter.</p>
+
+<table class="table table-condensed">
+  <tbody>
+    <tr>
+      <td><label for="domain">Domain</label></td>
+      <td><input type="text" id="domain" value="example.org"></td>
+    </tr>
+
+    <tr>
+      <td><label for="cookies">Input</label></td>
+      <td><textarea id="input" rows="10">remember_me=true; APISID=DijdSAOAjgwijnhFMndsjiejfdSDNSgfsikasASIfgijsowITITeoknsd; static_files=iy1aBf1JhQR</textarea></td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td><button class="btn" id="generate">Generate</button></td>
+    </tr>
+
+    <tr>
+      <td><label class="control-label" for="output">Output</label></td>
+      <td><textarea id="output" rows="10" wrap="off"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+
+{% include disqus.html %}

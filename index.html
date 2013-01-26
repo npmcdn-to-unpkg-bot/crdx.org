@@ -1,0 +1,55 @@
+---
+layout: default
+menu: home
+name: home
+---
+
+{% for page in paginator.posts %}
+  <div class="site-post">
+    {% include post-header.html %}
+
+    <script type="text/javascript">
+      var disqus_shortname = "crdx";
+      var disqus_url = "{{ site.url }}{{ page.url }}";
+      var disqus_identifier = "{{ page.disqus_id }}";
+
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+
+    <div class="post-content">{{ page.content }}</div>
+
+    <div class="post-comments"><a href="{{ page.url }}#disqus_thread"></a></div>
+    <hr>
+  </div>
+{% endfor %}
+
+<div class="site-pagination">
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+    <a class="pagination-previous" href="/">&larr; Previous</a>
+  {% else %}
+    <a class="pagination-previous" href="/page{{ paginator.previous_page }}">&larr; Previous</a>
+  {% endif %}
+{% endif %}
+
+{% if paginator.total_pages > 1 %}
+  {% for i in (1..paginator.total_pages) %}
+    {% if i == paginator.page %}
+      <strong>{{ i }}</strong>
+    {% elsif i != 1 %}
+      <a href="/page{{ i }}">{{ i }}</a>
+    {% else %}
+      <a href="/">1</a>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if paginator.next_page %}
+  <a class="pagination-next" href="/page{{ paginator.next_page }}">Next &rarr;</a>
+{% endif %}
+</div>

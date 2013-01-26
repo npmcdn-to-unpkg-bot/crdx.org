@@ -1,0 +1,23 @@
+---
+layout: default
+name: archive
+menu: archive
+
+title: archive
+---
+
+<h3 class="underline">{{ page.title }}</h3>
+
+<ul>
+  {% for post in site.posts %}
+    {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% unless year == post_year %}{% assign year = post_year %}<h4>{{ year }}</h4>{% endunless %}
+    {% capture post_month %}{{ post.date | date: "%B" }}{% endcapture %}
+    {% unless month == post_month %}{% assign month = post_month %}<h5>{{ month }}</h5>{% endunless %}
+
+    <li>
+      <span class="day">{{ post.date | date: "%d" }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

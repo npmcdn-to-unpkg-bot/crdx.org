@@ -1,0 +1,25 @@
+---
+layout: nil
+url: feed.xml
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>crdx.org</title>
+ <link href="http://crdx.org/feed.xml" rel="self"/>
+ <link href="http://crdx.org" />
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://crdx.org</id>
+ <author><name>crdx</name></author>
+ {% for post in site.posts limit:20 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://crdx.org{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://crdx.org{{ post.id }}</id>
+   <content type="html">
+     {{ post.content | xml_escape }}
+   </content>
+ </entry>
+ {% endfor %}
+</feed>
