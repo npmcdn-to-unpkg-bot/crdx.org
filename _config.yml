@@ -7,6 +7,7 @@ paginate:     10
 destination:  "../crdx.org-deploy/deploy"
 pygments:     true
 markdown:     "rdiscount"
-lsi:           true
+lsi:          false
+future:       false
 
 exclude:      [ "README.md" ]
