@@ -18,7 +18,7 @@ $(function() {
         return false;
     });
 
-    $("#output").on("click", function(event) { 
+    $("#output").on("click", function(event) {
         $(this).select();
     });
 });
