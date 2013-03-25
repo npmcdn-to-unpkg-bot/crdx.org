@@ -1,15 +1,3 @@
-var repositories = [
-    { id: "crdx_org",                 repoName: "crdx.org" },
-    { id: "markdowns",                repoName: "markdowns" },
-    { id: "demunger",                 repoName: "demunger" },
-    { id: "tile",                     repoName: "Tile" },
-    { id: "calc",                     repoName: "Calc" },
-    { id: "portablesettingsprovider", repoName: "PortableSettingsProvider" },
-    { id: "graph",                    repoName: "Graph" },
-    { id: "trivia_mrc",               repoName: "trivia-mrc" },
-    { id: "utorrent_mrc",             repoName: "utorrent-mrc" }
-];
-
 var url = "https://api.github.com/repos/crdx/0/commits";
 
 function getTooltip(commit)
@@ -34,10 +22,11 @@ function setTooltip($element, msg)
 }
 
 $(function() {
-    $.each(repositories, function(i, element) {
-        $("#" + element.id).css("cursor", "default");
+    $(".project").each(function(i, element) {
+        var $element = $(element);
+        $element.css("cursor", "default");
 
-        $("#" + element.id + " b").tooltip({
+        $("b", $element).tooltip({
             html: true,
             animation: false,
             trigger: "manual",
@@ -61,7 +50,7 @@ $(function() {
             $this.tooltip("show");
             $this.data("cancel", false); // reset cancelled flag
 
-            var repoUrl = url.replace(/0/, element.repoName);
+            var repoUrl = url.replace(/0/, $element.data("repo"));
 
             $.ajax({ dataType: "jsonp", url: repoUrl, success: function(result) {
                 var tooltipMsg;
@@ -81,7 +70,7 @@ $(function() {
                 }
 
                 // only show it if it hasn't been cancelled
-                if ($this.data("cancel") !== true)
+                if (!$this.data("cancel"))
                     setTooltip($this, tooltipMsg);
             }});
         };
@@ -96,6 +85,6 @@ $(function() {
         };
 
         // tooltips on <td>s make everything jump around, so use the <b>
-        $("#" + element.id + " b").hover(mouseEnter, mouseLeave);
+        $("b", $element).hover(mouseEnter, mouseLeave);
     });
 });
