@@ -4,10 +4,10 @@ title:        "crdx.org"
 
 permalink:    "/:year/:month/:day/:title.html"
 paginate:     10
-destination:  "../crdx.org-deploy/deploy"
+destination:  "../dist/deploy"
 pygments:     true
 markdown:     "rdiscount"
 lsi:          false
 future:       false
 
-exclude:      [ "README.md" ]
+exclude:      ["README.md", "Gruntfile.js", "package.json", "node_modules"]
