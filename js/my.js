@@ -1,9 +1,9 @@
 function timeAgo(from)
 {
-    var date = new Date;
-    from = date.setTime(Date.parse(from))
+    var date = new Date();
+    from = date.setTime(Date.parse(from));
 
-    var distance_in_seconds = ((new Date - from) / 1000);
+    var distance_in_seconds = ((new Date() - from) / 1000);
     var distance_in_minutes = Math.floor(distance_in_seconds / 60);
 
     if (distance_in_minutes === 0)      return "less than a minute ago";
