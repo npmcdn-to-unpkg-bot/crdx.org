@@ -1,0 +1,21 @@
+{
+  "name": "crdx.org",
+  "version": "1.0.0",
+  "description": "source of crdx.org",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/crdx/crdx.org.git"
+  },
+  "author": "crdx",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-jshint": "~0.3.0",
+    "execSync": "0.0.3",
+    "two-step": "0.0.3",
+    "first": "0.0.3"
+  }
+}
