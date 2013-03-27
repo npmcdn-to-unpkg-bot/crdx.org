@@ -9,13 +9,10 @@
   "author": "crdx",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "devDependencies": {
+  "dependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-less": "~0.5.0",
     "grunt-contrib-watch": "~0.3.1",
-    "grunt-contrib-jshint": "~0.3.0",
-    "execSync": "0.0.3",
-    "two-step": "0.0.3",
-    "first": "0.0.3"
+    "grunt-contrib-jshint": "~0.3.0"
   }
 }
