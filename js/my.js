@@ -1,3 +1,5 @@
+// TODO wrap this in an anonymous function and consider attaching these method(s) to a global object
+
 function timeAgo(from)
 {
     var date = new Date();
