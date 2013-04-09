@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
         watch: {
             files: ["**/*", "!node_modules/**/*"],
-            tasks: ["jshint", "less:dist", "jekyll"]
+            tasks: ["jshint", "less:dev", "jekyll"]
         },
 
         jshint: {
