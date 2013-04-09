@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                     laxbreak: true
                 },
                 files: {
-                    src: ["js/{my,github-commits,cookie-generator,analytics}.js"]
+                    src: ["js/{util,github-commits,cookie-generator}.js"]
                 },
             },
         },
