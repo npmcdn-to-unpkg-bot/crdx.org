@@ -6,7 +6,7 @@
         var toolTip = "[" + commit.tree.sha.substring(0, 6) + "] "
             + commit.message
             + "<br><br>(by " + commit.committer.name + " "
-            + timeAgo(commit.committer.date);
+            + util.timeAgo(commit.committer.date);
 
         if (commit.committer.name !== commit.author.name)
             toolTip += " and authored by " + commit.author.name;
