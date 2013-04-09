@@ -2,6 +2,7 @@
 layout: default
 name: about
 menu: about
+permalink: /about/
 
 title: about
 ---

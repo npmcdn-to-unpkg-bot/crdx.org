@@ -31,17 +31,17 @@
     <nav class="site-nav clearfix">
       <ul class="nav-left">
         <li{% if page.menu == "home" %} class="selected"{% endif %}><a href="/">home</a></li>
-        <li{% if page.menu == "archive" %} class="selected"{% endif %}><a href="/archive.html">archive</a></li>
-        <li{% if page.menu == "code" %} class="selected"{% endif %}><a href="/code.html">code</a></li>
-        <li{% if page.menu == "misc" %} class="selected"{% endif %}><a href="/misc.html">misc</a></li>
-        <li{% if page.menu == "about" %} class="selected"{% endif %}><a href="/about.html">about</a></li>
+        <li{% if page.menu == "archive" %} class="selected"{% endif %}><a href="/archive">archive</a></li>
+        <li{% if page.menu == "code" %} class="selected"{% endif %}><a href="/code">code</a></li>
+        <li{% if page.menu == "misc" %} class="selected"{% endif %}><a href="/misc">misc</a></li>
+        <li{% if page.menu == "about" %} class="selected"{% endif %}><a href="/about">about</a></li>
         <li><a href="/feed.xml" target="_blank"><i class="glyphicon-rss"></i> rss</a></li>
       </ul>
 
       <ul class="nav-right">
-        <li><a href="http://github.com/crdx" target="_blank"><i class="glyphicon-github"></i> github</a></li>
-        <!--<li><a href="http://twitter.com" target="_blank"><i class="glyphicon-twitter"></i> twitter</a></li>-->
-        <li><a href="http://stackoverflow.com/users/457104/crdx" target="_blank"><i class="glyphicon-stackoverflow"></i> so</a></li>
+        <li><a href="http://github.com/crdx" target="_blank"><i class="glyphicon-github"></i>github</a></li>
+        <!--<li><a href="http://twitter.com" target="_blank"><i class="glyphicon-twitter"></i>twitter</a></li>-->
+        <li><a href="http://stackoverflow.com/users/457104/crdx" target="_blank"><i class="glyphicon-stackoverflow"></i>so</a></li>
       </ul>
     </nav>
 
@@ -62,7 +62,7 @@
           <table>
           {% for tag in site.tags %}
             <tr>
-              <td class="tag-name"><a href="/tags.html#{{ tag[0] }}">{{ tag[0] }}</a></td>
+              <td class="tag-name"><a href="/tags#{{ tag[0] }}">{{ tag[0] }}</a></td>
               <td>{{ tag[1].size }}</td>
             </tr>
           {% endfor %}
