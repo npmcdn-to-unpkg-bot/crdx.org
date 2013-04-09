@@ -1,4 +1,4 @@
-[class^="glyphicon-"], 
+[class^="glyphicon-"],
 [class*=" glyphicon-"] {
     display: inline-block;
     *margin-right: .3em;
@@ -20,7 +20,7 @@
     margin-right: 2px;
 }
 
-[class^="w-glyphicon-"], 
+[class^="w-glyphicon-"],
 [class*=" w-glyphicon-"] {
     display: inline-block;
     *margin-right: .3em;
