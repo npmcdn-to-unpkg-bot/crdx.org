@@ -11,9 +11,9 @@
 
 @header_bg:  #bbb;
 @nav_bg:     #ccc;
-@content_bg: #ddd;
+@content_bg: #e5e5e5;
 
-@code_bg:    #eee;
+@code_bg:    #fafafa;
 
 // -------------------
 // website container
@@ -83,6 +83,10 @@
 
     &.nav-right {
       float: right;
+
+      i[class^=glyphicon] {
+        margin-right: 0.5em;
+      }
     }
   }
 }
@@ -219,8 +223,8 @@
 // pagination
 // -------------------
 .site-pagination {
-  .pagination-previous {}
-  .pagination-next {}
+  .pagination-previous { }
+  .pagination-next { }
 }
 
 // -------------------
@@ -281,6 +285,7 @@ hr {
   border-bottom: 0px;
 }
 
+// bootstrap default blue is way too common now
 a {
   color: lighten(blue, 10%);
 }
@@ -290,29 +295,31 @@ i.glyphicon-stackoverflow {
   background-position: 0px 0px;
 }
 
-// bootstrap code blocks
-code {
-  color: @text_color;
+// bootstrap codey bits
+code, pre {
   background-color: @code_bg;
   border: 0px;
 }
 
+// inline code
+code {
+  color: @text_color;
+  border-radius: 0.5em;
+}
+
+// code blocks
+.highlight {
+  background-color: @content_bg !important;
+}
+
 pre {
-  background-color: @code_bg;
+  border-radius: 1em;
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
+  padding: 0.5em;
 }
 
-
-// pygments
-.highlight {
-  background-color: @content_bg !important;
-
-  pre {
-    background-color: @code_bg !important;
-  }
-}
 
 // bootstrap tooltip
 .tooltip {
