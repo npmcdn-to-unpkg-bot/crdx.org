@@ -12,8 +12,8 @@ module.exports = function(grunt) {
             all: {
                 files: {
                     "js/all.min.js": [
-                        "js/html5shiv.js",
-                        "js/bootstrap.min.js", // todo use non-minified versions of these
+                        "js/jquery.js",
+                        "js/bootstrap.js",
                         "js/util.js",
                         "js/cookie-generator.js",
                         "js/github-commits.js"
@@ -25,14 +25,17 @@ module.exports = function(grunt) {
         cssmin: {
             all: {
                 files: {
-                    "css/style.min.css": [
-                        "css/bootstrap.min.css",
-                        "css/bootstrap-responsive.min.css",
+                    "css/all.min.css": [
+                        "css/bootstrap.css",
+                        "css/bootstrap-responsive.css",
                         "css/glyphicons.css",
                         "css/syntax.css",
                         "css/style.css",
                     ]
                 },
+                options: {
+                    keepSpecialComments: 0,
+                }
             },
         },
 
