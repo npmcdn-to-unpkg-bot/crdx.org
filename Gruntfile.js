@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         },
     });
 
-    grunt.registerTask("jekyll", "generates jekyll", function() {
+    grunt.registerTask("jekyll", function() {
         var done = this.async();
 
         grunt.util.spawn({ cmd: "jekyll" }, function(error, result, code) {
