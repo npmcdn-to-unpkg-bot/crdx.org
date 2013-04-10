@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 
         watch: {
             files: ["**/*", "!node_modules/**/*"],
-            tasks: ["jshint", "uglify", "less", "cssmin", "jekyll"]
+            tasks: ["all"]
         },
 
         jshint: {
@@ -90,5 +90,8 @@ module.exports = function(grunt) {
         });
     });
 
-    grunt.registerTask("default", ["watch"]);
+    grunt.registerTask("all", ["jshint", "uglify", "less", "cssmin", "jekyll"]);
+
+    grunt.registerTask("default", "watch");
+    grunt.registerTask("build", "all");
 };
