@@ -1,4 +1,4 @@
-var util = {
+window.util = {
     timeAgo: function(from)
     {
         var date = new Date();

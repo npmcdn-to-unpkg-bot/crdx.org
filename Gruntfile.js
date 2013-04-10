@@ -12,11 +12,14 @@ module.exports = function(grunt) {
             all: {
                 files: {
                     "js/all.min.js": [
+                        // third party
                         "js/jquery.js",
                         "js/bootstrap.js",
-                        "js/util.js",
-                        "js/cookie-generator.js",
-                        "js/github-commits.js"
+
+                        // mine
+                        "js/util-jsh.js",
+                        "js/cookie-generator-jsh.js",
+                        "js/github-commits-jsh.js"
                     ]
                 },
             },
@@ -67,7 +70,7 @@ module.exports = function(grunt) {
                     laxbreak: true
                 },
                 files: {
-                    src: ["js/{util,github-commits,cookie-generator}.js"]
+                    src: ["js/*-jsh.js"]
                 },
             },
         },
