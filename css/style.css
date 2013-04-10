@@ -142,15 +142,6 @@
   width: 147px;
   margin-bottom: 0px;
 }
-.page-code table,
-.page-misc table {
-  margin-bottom: 1em;
-}
-.page-code table td,
-.page-misc table td {
-  border-collapse: collapse !important;
-  border: 1px solid #bbbbbb !important;
-}
 .page-archive ul {
   margin-left: 0px;
 }
