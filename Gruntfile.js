@@ -29,10 +29,13 @@ module.exports = function(grunt) {
             all: {
                 files: {
                     "css/all.min.css": [
+                        // third party
                         "css/bootstrap.css",
                         "css/bootstrap-responsive.css",
                         "css/glyphicons.css",
                         "css/syntax.css",
+
+                        // mine
                         "css/style.css",
                     ]
                 },
