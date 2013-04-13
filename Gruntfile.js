@@ -8,6 +8,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
 
+        /*
         uglify: {
             all: {
                 files: {
@@ -44,6 +45,7 @@ module.exports = function(grunt) {
                 }
             },
         },
+        */
 
         less: {
             all: {
@@ -73,7 +75,7 @@ module.exports = function(grunt) {
                     laxbreak: true
                 },
                 files: {
-                    src: ["js/*-jsh.js"]
+                    src: ["js/{util,cookie-generator,github-commits}.js"]
                 },
             },
         },
@@ -96,7 +98,7 @@ module.exports = function(grunt) {
         });
     });
 
-    grunt.registerTask("all", ["jshint", "uglify", "less", "cssmin", "jekyll"]);
+    grunt.registerTask("all", ["jshint", /*"uglify",*/ "less", /*"cssmin",*/ "jekyll"]);
 
     grunt.registerTask("default", "watch");
     grunt.registerTask("build", "all");

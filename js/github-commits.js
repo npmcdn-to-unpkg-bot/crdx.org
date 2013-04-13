@@ -1,7 +1,7 @@
 (function() {
     var url = "https://api.github.com/repos/crdx/0/commits";
 
-    function getTooltip(commit)
+    function getTooltipMessage(commit)
     {
         var toolTip = "[" + commit.tree.sha.substring(0, 6) + "] "
             + commit.message
@@ -58,7 +58,7 @@
 
                     if (result.data[0])
                     {
-                        tooltipMsg = getTooltip(result.data[0].commit);
+                        tooltipMsg = getTooltipMessage(result.data[0].commit);
 
                         $this.data("commit", tooltipMsg);
                     }
