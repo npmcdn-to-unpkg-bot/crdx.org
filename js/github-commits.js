@@ -1,5 +1,5 @@
 (function() {
-    var url = "https://api.github.com/repos/crdx/0/commits";
+    var url = "https://api.github.com/repos/crdx/0/commits/master";
 
     function getTooltipMessage(commit)
     {
@@ -56,9 +56,9 @@
                 $.ajax({ dataType: "jsonp", url: repoUrl, success: function(result) {
                     var tooltipMsg;
 
-                    if (result.data[0])
+                    if (result.data)
                     {
-                        tooltipMsg = getTooltipMessage(result.data[0].commit);
+                        tooltipMsg = getTooltipMessage(result.data.commit);
 
                         $this.data("commit", tooltipMsg);
                     }
