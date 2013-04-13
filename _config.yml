@@ -5,8 +5,7 @@ title:        "crdx.org"
 permalink:    "/:year/:month/:day/:title/"
 paginate:     10
 destination:  "../dist/deploy"
-pygments:     true
-markdown:     "rdiscount"
+markdown:     "kramdown"
 lsi:          false
 future:       false
 

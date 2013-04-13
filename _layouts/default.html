@@ -13,13 +13,14 @@
     <link rel="alternate" title="crdx.org rss feed" href="/feed.xml" type="application/rss+xml">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/glyphicons.css" />
-    <link rel="stylesheet" type="text/css" href="/css/syntax.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/glyphicons.css" />
+    <link rel="stylesheet" type="text/css" href="/css/vs.highlight.css" />
 
     <!--[if lt IE 9]><script type="text/javascript" src="/js/html5shiv.js"></script><![endif]-->
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/highlight.pack.js"></script>
     <script type="text/javascript" src="/js/util.js"></script>
     {% if page.name == "cookies" %}<script type="text/javascript" src="/js/cookie-generator.js"></script>{% endif %}
     {% if page.name == "code" %}<script type="text/javascript" src="/js/github-commits.js"></script>{% endif %}
@@ -34,6 +35,8 @@
           ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+
+      hljs.initHighlightingOnLoad();
     </script>
   </head>
   <body>

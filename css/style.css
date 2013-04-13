@@ -194,11 +194,9 @@ code {
   color: #333333;
   border-radius: 0.5em;
 }
-.highlight {
-  background-color: #e5e5e5 !important;
-}
 pre {
   border-radius: 1em;
+  padding: 0.5em;
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
