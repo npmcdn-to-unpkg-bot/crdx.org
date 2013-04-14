@@ -7,6 +7,7 @@ permalink: /about/
 title: about
 ---
 
-<h2 class="page-title">{{ page.title }}</h2>
+## {{ page.title }}
+{: .page-title }
 
 I'm going to have to write something here at some point.
