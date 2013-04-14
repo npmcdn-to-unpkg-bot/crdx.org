@@ -7,10 +7,10 @@ permalink: /tags/
 title: tags
 ---
 
-<h3 class="underline">{{ page.title }}</h3>
+<h2 class="page-title">{{ page.title }}</h2>
 
 {% for tag in site.tags %}
-  <h4 id="{{ tag[0] }}">{{ tag[0] }}</h4>
+  <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
 
   <ul>
   {% for post in tag[1] %}

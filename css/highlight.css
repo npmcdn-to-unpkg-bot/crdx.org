@@ -1,9 +1,5 @@
 /* by Jason Diamond <jason@diamond.name> */
 
-pre code {
-  display: block; padding: 0.5em;
-}
-
 pre .comment,
 pre .annotation,
 pre .template_comment,

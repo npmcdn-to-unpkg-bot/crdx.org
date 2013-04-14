@@ -7,7 +7,7 @@ permalink: /misc/
 title: misc
 ---
 
-<h3 class="underline">{{ page.title }}</h3>
+<h2 class="page-title">{{ page.title }}</h2>
 
 Miscellaneous bits and pieces that don't really go anywhere else.
 

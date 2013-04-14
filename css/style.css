@@ -1,3 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+body,
+input,
+button,
+select,
+textarea {
+  font-family: 'Noto Sans';
+}
 .site-container {
   max-width: 800px;
   margin: 0 auto;
@@ -15,9 +23,7 @@
 }
 .site-header a h1 {
   margin: 0px;
-}
-.site-header a:hover {
-  text-decoration: none;
+  font-size: 40px;
 }
 .site-nav {
   background-color: #cccccc;
@@ -58,14 +64,9 @@
   padding-right: 205px;
   padding-bottom: 0px;
 }
-.site-content h3 {
-  margin-top: 0px;
-}
-.site-content h3.underline {
-  border-bottom: 1px solid #bbbbbb;
-}
 .site-post .post-title {
   margin-bottom: 0px;
+  margin-top: 0px;
   line-height: 1.2em;
 }
 .site-post .post-title a {
@@ -170,7 +171,29 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
+  font-weight: 700;
+}
+h1 {
+  font-size: 31.5px;
+}
+h2 {
+  font-size: 24.5px;
+}
+h3 {
+  font-size: 17.5px;
+}
+h4 {
+  font-size: 14px;
+}
+h5 {
+  font-size: 11.9px;
+}
+h2.page-title {
+  margin-top: 0px;
+  border-bottom: 1px solid #bbbbbb;
+}
+h3 {
+  line-height: normal;
 }
 hr {
   margin-left: 20%;
@@ -185,21 +208,21 @@ i.glyphicon-stackoverflow {
   background-image: url("/img/so.png");
   background-position: 0px 0px;
 }
-code,
 pre {
-  background-color: #fafafa;
   border: 0px;
-}
-code {
-  color: #333333;
   border-radius: 0.5em;
-}
-pre {
-  border-radius: 1em;
   padding: 0.5em;
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
+}
+pre,
+code {
+  border-radius: 0.5em;
+  background-color: #fafafa;
+}
+code {
+  color: #333333;
 }
 .tooltip {
   font-size: 1em;
