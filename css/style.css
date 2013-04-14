@@ -21,6 +21,9 @@ textarea {
   padding: 1em;
   color: black;
 }
+.site-header a:hover {
+  text-decoration: none;
+}
 .site-header a h1 {
   margin: 0px;
   font-size: 40px;
