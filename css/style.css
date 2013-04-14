@@ -236,10 +236,10 @@ code {
     padding-right: 1em !important;
     padding-top: 0px !important;
   }
-  .sidebar {
+  .site-sidebar {
     float: none !important;
   }
-  .sidebar .sidebar-box {
+  .site-sidebar .sidebar-box {
     margin-left: auto !important;
     margin-right: auto !important;
   }
