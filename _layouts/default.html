@@ -22,8 +22,12 @@
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/highlight.pack.js"></script>
     <script type="text/javascript" src="/js/util.js"></script>
-    {% if page.name == "cookies" %}<script type="text/javascript" src="/js/cookie-generator.js"></script>{% endif %}
-    {% if page.name == "code" %}<script type="text/javascript" src="/js/github-commits.js"></script>{% endif %}
+    {% case page.name %}
+    {% when "cookies" %}
+    <script type="text/javascript" src="/js/page-cookies.js"></script>
+    {% when "code" %}
+    <script type="text/javascript" src="/js/page-code.js"></script>
+    {% endcase %}
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
