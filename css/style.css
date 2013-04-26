@@ -69,28 +69,6 @@ textarea {
   padding-right: 205px;
   padding-bottom: 0px;
 }
-.site-post .post-title {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  line-height: 1.2em;
-}
-.site-post .post-title a {
-  text-decoration: none;
-  font-size: 0.9em;
-  color: #333333;
-}
-.site-post .post-meta {
-  line-height: 1em;
-}
-.site-post .post-content {
-  margin-top: 1em;
-}
-.site-post .post-content a:visited {
-  color: #000099;
-}
-.site-post .post-comments {
-  margin-top: 1em;
-}
 .site-sidebar {
   background-color: #e5e5e5;
   float: right;
@@ -146,6 +124,28 @@ textarea {
 .site-sidebar .sidebar-box .sidebar-content form input {
   width: 149px;
   margin-bottom: 0px;
+}
+.site-post .post-title {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 1.2em;
+}
+.site-post .post-title a {
+  text-decoration: none;
+  font-size: 0.9em;
+  color: #333333;
+}
+.site-post .post-meta {
+  line-height: 1em;
+}
+.site-post .post-content {
+  margin-top: 1em;
+}
+.site-post .post-content a:visited {
+  color: #000099;
+}
+.site-post .post-comments {
+  margin-top: 1em;
 }
 .page-archive ul {
   margin-left: 0px;
