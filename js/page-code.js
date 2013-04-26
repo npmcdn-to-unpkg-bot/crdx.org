@@ -5,7 +5,7 @@
     {
         var toolTip = "[" + commit.tree.sha.substring(0, 6) + "] "
             + commit.message
-            + "<br><br>(by " + commit.committer.name + " "
+            + "<br><br>(by " + commit.committer.name + ", "
             + util.timeAgo(commit.committer.date);
 
         if (commit.committer.name !== commit.author.name)
