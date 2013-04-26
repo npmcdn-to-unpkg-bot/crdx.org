@@ -264,7 +264,6 @@ code {
     width: 100% !important;
   }
   .site-nav ul li.selected {
-    border-bottom-left-radius: 10px !important;
-    border-bottom-right-radius: 10px !important;
+    border-radius: 0 !important;
   }
 }
