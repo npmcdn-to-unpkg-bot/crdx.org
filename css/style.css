@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body,
 input,
 button,
@@ -66,20 +71,23 @@ textarea {
 .site-content {
   background-color: #e5e5e5;
   padding: 1em;
-  padding-right: 205px;
   padding-bottom: 0px;
+  overflow: hidden;
+  width: auto;
 }
 .site-sidebar {
   background-color: #e5e5e5;
   float: right;
+  width: 200px;
+  padding: 1em;
+  padding-left: 0;
 }
 .site-sidebar .sidebar-box {
   clear: left;
   background-color: #cccccc;
   border-radius: 10px;
   border: 1px solid #bbbbbb;
-  margin: 1em;
-  width: 175px;
+  margin-bottom: 1em;
 }
 .site-sidebar .sidebar-box .sidebar-title {
   font-weight: bold;
@@ -122,7 +130,7 @@ textarea {
   margin-bottom: 0px;
 }
 .site-sidebar .sidebar-box .sidebar-content form input {
-  width: 149px;
+  width: 100%;
   margin-bottom: 0px;
 }
 .site-post .post-title {
@@ -238,15 +246,13 @@ code {
   opacity: 100;
   filter: alpha(opacity=100);
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
   .site-content {
     padding-right: 1em !important;
     padding-top: 0px !important;
   }
   .site-sidebar {
     float: none !important;
-  }
-  .site-sidebar .sidebar-box {
     margin-left: auto !important;
     margin-right: auto !important;
   }

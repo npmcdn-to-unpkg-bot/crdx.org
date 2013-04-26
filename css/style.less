@@ -1,7 +1,6 @@
 @container_width: 800px;
-@sidebar_width:   175px;
-@sidebar_gap:     30px;
-@collapse_width:  550px;
+@sidebar_width:   200px;
+@collapse_width:  600px;
 
 @tab_radius: 10px;
 @box_radius: 10px;
@@ -12,14 +11,20 @@
 @header_bg:  #bbb;
 @nav_bg:     #ccc;
 @content_bg: #e5e5e5;
-
 @code_bg:    #fafafa;
+
 @font_size:  13px;
 
 // -------------------
 // font
 // -------------------
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic);
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body,
 input,
@@ -117,8 +122,9 @@ textarea {
 .site-content {
   background-color: @content_bg;
   padding: 1em;
-  padding-right: @sidebar_width + @sidebar_gap;
   padding-bottom: 0px;
+  overflow: hidden;
+  width: auto;
 }
 
 // -------------------
@@ -127,14 +133,16 @@ textarea {
 .site-sidebar {
   background-color: @content_bg;
   float: right;
+  width: @sidebar_width;
+  padding: 1em;
+  padding-left: 0;
 
   .sidebar-box {
     clear: left;
     background-color: @nav_bg;
     border-radius: @box_radius;
     border: 1px solid @header_bg;
-    margin: 1em;
-    width: @sidebar_width;
+    margin-bottom: 1em;
 
     .sidebar-title {
       font-weight: bold;
@@ -186,7 +194,7 @@ textarea {
         margin-bottom: 0px;
 
         input {
-          width: @sidebar_width - (@font_size * 2); // what a horrible hack :(
+          width: 100%;
           margin-bottom: 0px;
         }
       }
@@ -361,11 +369,8 @@ code {
 
   .site-sidebar {
     float: none !important;
-
-    .sidebar-box {
-      margin-left: auto !important;
-      margin-right: auto !important;
-    }
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .site-nav {
