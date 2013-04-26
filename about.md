@@ -10,4 +10,8 @@ title: about
 ## {{ page.title }}
 {: .page-title }
 
-I'm going to have to write something here at some point.
+Hello.
+
+### What's wrong with this place?
+
+You can find out at [the issues page on GitHub](http://github.com/crdx/crdx.org/issues?state=open).
