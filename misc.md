@@ -21,7 +21,7 @@ Miscellaneous bits and pieces that don't really go anywhere else.
   </thead>
   <tbody>
     <tr>
-      <td><a href="/misc/cookies">cookies</a></td>
+      <td><a href="/misc/cookies/">cookies</a></td>
       <td>a Netscape-format cookies file generator</td>
     </tr>
   </tbody>

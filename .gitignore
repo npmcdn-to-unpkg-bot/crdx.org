@@ -2,3 +2,6 @@ _posts/
 node_modules/
 _deploy
 *.sublime-*
+
+js/*.map
+js/all.min.js

@@ -11,7 +11,7 @@ future:       false
 
 exclude:      [
                   "README.md",
-                  "Gruntfile.js",
+                  "Gruntfile.coffee",
                   "package.json",
                   "node_modules",
                   "project.sublime-project",
