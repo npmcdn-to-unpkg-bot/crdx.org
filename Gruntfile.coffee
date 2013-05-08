@@ -1,11 +1,4 @@
 module.exports = (grunt) ->
-    # load all the things
-    grunt.loadNpmTasks "grunt-contrib-less"
-    grunt.loadNpmTasks "grunt-contrib-watch"
-    grunt.loadNpmTasks "grunt-contrib-cssmin"
-    grunt.loadNpmTasks "grunt-contrib-uglify"
-    grunt.loadNpmTasks "grunt-contrib-coffee"
-
     grunt.initConfig
         pkg: grunt.file.readJSON "package.json"
 
@@ -77,6 +70,13 @@ module.exports = (grunt) ->
             else
                 grunt.log.writeln result
                 done true
+
+    # load all the things
+    grunt.loadNpmTasks "grunt-contrib-less"
+    grunt.loadNpmTasks "grunt-contrib-watch"
+    grunt.loadNpmTasks "grunt-contrib-cssmin"
+    grunt.loadNpmTasks "grunt-contrib-uglify"
+    grunt.loadNpmTasks "grunt-contrib-coffee"
 
     grunt.registerTask "build", [
         "coffee" # *.coffee -> *.js
