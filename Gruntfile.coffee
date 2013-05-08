@@ -33,17 +33,16 @@ module.exports = (grunt) ->
                 files: "css/style.css": "css/style.less"
 
         cssmin:
+            options:
+                keepSpecialComments: 0
+
             mine:
                 files: "css/style.min.css": "css/style.css"
-                options:
-                    keepSpecialComments: 0
-
             others:
                 files:
                     "css/glyphicons.min.css": "css/glyphicons.css"
                     "css/highlight.min.css": "css/highlight.css"
-                options:
-                    keepSpecialComments: 0
+
         watch:
             #Gruntfile:
             #    files: []
