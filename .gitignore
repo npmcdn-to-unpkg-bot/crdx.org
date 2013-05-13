@@ -4,4 +4,6 @@ _deploy
 *.sublime-*
 
 js/*.map
-js/all.min.js
+js/*.min.js
+css/*.min.css
+css/style.css

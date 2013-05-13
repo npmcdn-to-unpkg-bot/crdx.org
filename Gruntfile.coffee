@@ -21,9 +21,9 @@ module.exports = (grunt) ->
                     sourceMap: "js/all.min.js.map"
                     sourceMapIn: "js/all.js.map"
 
-        less:
+        stylus:
             all:
-                files: "css/style.css": "css/style.less"
+                files: "css/style.css": "css/style.styl"
 
         cssmin:
             options:
@@ -44,7 +44,7 @@ module.exports = (grunt) ->
                 files: [
                     "**/*"
                     "!js/*.coffee"       # ignore
-                    "!css/*.less"        # ignore
+                    "!css/*.styl"        # ignore
                     "!node_modules/**/*" # ignore
                 ]
                 tasks: ["jekyll"]
@@ -56,9 +56,9 @@ module.exports = (grunt) ->
                 ]
                 tasks: ["coffee", "uglify"]
 
-            less:
-                files: "css/*.less"
-                tasks: ["less", "cssmin:mine"]
+            stylus:
+                files: "css/*.styl"
+                tasks: ["stylus", "cssmin:mine"]
 
     grunt.registerTask "jekyll", ->
         done = this.async()
@@ -72,7 +72,7 @@ module.exports = (grunt) ->
                 done true
 
     # load all the things
-    grunt.loadNpmTasks "grunt-contrib-less"
+    grunt.loadNpmTasks "grunt-contrib-stylus"
     grunt.loadNpmTasks "grunt-contrib-watch"
     grunt.loadNpmTasks "grunt-contrib-cssmin"
     grunt.loadNpmTasks "grunt-contrib-uglify"
@@ -81,7 +81,7 @@ module.exports = (grunt) ->
     grunt.registerTask "build", [
         "coffee" # *.coffee -> *.js
         "uglify" # *.js     -> *.min.js
-        "less"   # *.less   -> *.css
+        "stylus" # *.styl   -> *.css
         "cssmin" # *.css    -> *.min.css
         "jekyll"
     ]
