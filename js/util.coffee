@@ -2,7 +2,7 @@ window.util = exports = {};
 
 exports.timeAgo = (from) ->
     date = new Date();
-    from = date.setTime Date.parse(from)
+    from = date.setTime(Date.parse(from))
 
     seconds = (new Date() - from) / 1000
     minutes = Math.floor(seconds / 60)
