@@ -18,4 +18,4 @@ $ ->
         return false
 
     $output.on "click", (event) ->
-        $(this).select()
+        $(@).select()
