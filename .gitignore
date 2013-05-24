@@ -1,9 +1,17 @@
 _posts/
+_drafts/
 node_modules/
 _deploy
-*.sublime-*
 
-js/*.map
-js/*.min.js
+# we don't need to commit anything minified
 css/*.min.css
+js/*.min.js
+
+# nor the compiled coffeescript
+js/*.coffee.js
+
+# nor the sourcemaps
+js/*.map
+
+# special case: we know this is generated from the *.styl file
 css/style.css
