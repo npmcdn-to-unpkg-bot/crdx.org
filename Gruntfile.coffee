@@ -85,7 +85,7 @@ module.exports = (grunt) ->
                 files: [
                     "*"
                     "_*/**"
-                    "{misc}/**"
+                    "misc/**"
                 ]
                 tasks: "jekyll:production"
 
