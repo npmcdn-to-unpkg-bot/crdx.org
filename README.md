@@ -14,10 +14,20 @@ This is the source of [crdx.org](http://crdx.org) which is currently generated b
 
 ### Run tasks
 
-Watch and build everything when anything changes:
+**Note**: "production" implies "without drafts" only.
 
-    grunt [watch]
+Build assets only:
 
-Build:
+    grunt assets
+
+Build all with drafts:
+
+    grunt drafts
+
+Build all as production:
 
     grunt build
+
+Watch and build all as production when anything changes:
+
+    grunt

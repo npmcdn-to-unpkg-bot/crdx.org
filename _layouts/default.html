@@ -13,19 +13,19 @@
 
     <link rel="alternate" title="crdx.org rss feed" href="/feed.xml" type="application/rss+xml">
 
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/style.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/glyphicons.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/highlight.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/glyphicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/highlight.min.css" />
 
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/modernizr.js"></script>
-    <script type="text/javascript" src="/js/highlight.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
+    <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
 
-    <script type="text/javascript" src="/js/util.min.js"></script>
-    <script type="text/javascript" src="/js/cookies.min.js"></script>
-    <script type="text/javascript" src="/js/projects.min.js"></script>
+    <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
+    {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
+    {% if page.name == "code" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
 
     <script type="text/javascript">
       var _gaq = _gaq || [];

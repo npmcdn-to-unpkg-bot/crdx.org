@@ -14,7 +14,5 @@ exclude: [
             "README.md",
             "Gruntfile.coffee",
             "package.json",
-            "node_modules",
-            "project.sublime-project",
-            "project.sublime-workspace"
+            "node_modules"
          ]
