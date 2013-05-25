@@ -12,7 +12,7 @@ This is the source of [crdx.org](http://crdx.org) which is currently generated b
 
     npm install
 
-### Run tasks
+### Build
 
 **Note**: "production" implies "without drafts" only.
 
@@ -28,6 +28,8 @@ Build all as production:
 
     grunt build
 
-Watch and build all as production when anything changes:
+### Live Reload
+
+Run the grunt task with no parameters to watch all files for changes and rebuild the website when they change. Additionally, a livereload server will start on port 9001.
 
     grunt

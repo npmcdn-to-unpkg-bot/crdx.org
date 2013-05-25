@@ -1,4 +1,5 @@
 path = require "path"
+lrSnippet = require("grunt-contrib-livereload/lib/utils").livereloadSnippet
 
 module.exports = (grunt) ->
     path = require("path")
@@ -6,6 +7,17 @@ module.exports = (grunt) ->
     grunt.initConfig
         pkg: grunt.file.readJSON "package.json"
         yaml: grunt.file.readYAML "_config.yml"
+
+        livereload:
+            port: 35729
+
+        connect:
+            livereload:
+                options:
+                    port: 9001
+                    base: "../dist/deploy"
+                    middleware: (connect, options) ->
+                        [lrSnippet, connect.static path.resolve(options.base)]
 
         clean:
             all: [
@@ -63,39 +75,35 @@ module.exports = (grunt) ->
                 options:
                     drafts: false
 
-        watch:
-            options:
-                nospawn: true
+        regarde:
             coffee:
                 files: "js/*.coffee"
-                tasks: ["coffee:all", "jekyll:production"]
+                tasks: ["coffee:all", "jekyll:production", "livereload"]
             stylus:
                 files: "css/*.styl"
-                tasks: ["stylus:all", "jekyll:production"]
+                tasks: ["stylus:all", "jekyll:production", "livereload"]
             cssmin:
                 files: "css/*.css"
-                tasks: ["cssmin:all", "jekyll:production"]
+                tasks: ["cssmin:all", "jekyll:production", "livereload"]
             uglify:
                 files: "js/*.js"
-                tasks: ["uglify:all", "jekyll:production"]
+                tasks: ["uglify:all", "jekyll:production", "livereload"]
             images:
                 files: "img/*"
-                tasks: ["copy:images", "jekyll:production"]
+                tasks: ["copy:images", "jekyll:production", "livereload"]
             jekyll:
-                files: [
-                    "*"
-                    "_*/**"
-                    "misc/**"
-                ]
-                tasks: "jekyll:production"
+                files: ["*", "_*/**", "misc/**"]
+                tasks: ["jekyll:production", "livereload"]
 
     grunt.loadNpmTasks "grunt-contrib-stylus"
     grunt.loadNpmTasks "grunt-contrib-cssmin"
     grunt.loadNpmTasks "grunt-contrib-uglify"
     grunt.loadNpmTasks "grunt-contrib-coffee"
     grunt.loadNpmTasks "grunt-contrib-clean"
-    grunt.loadNpmTasks "grunt-contrib-watch"
     grunt.loadNpmTasks "grunt-contrib-copy"
+    grunt.loadNpmTasks "grunt-regarde"
+    grunt.loadNpmTasks "grunt-contrib-connect"
+    grunt.loadNpmTasks "grunt-contrib-livereload"
 
     # jekyll
     grunt.registerMultiTask "jekyll", ->
@@ -118,14 +126,12 @@ module.exports = (grunt) ->
                 grunt.log.writeln result
                 done true
 
-    grunt.event.on "watch", (action, filePath) ->
-        return if action != "changed"
-
+    grunt.event.on "regarde:file:changed", (section, filePath, tasks, spawn) ->
         # When a change occurs, override the source to be just that file, rather
         # than all the files defined above. This means that only the changed
         # file will be recompiled and not everything.
         for task in ["coffee", "stylus", "cssmin", "uglify"]
-            if grunt.file.isMatch(grunt.config("watch.#{task}.files"), filePath)
+            if grunt.file.isMatch(grunt.config("regarde.#{task}.files"), filePath)
                 grunt.config "#{task}.all.src", filePath
 
     grunt.registerTask "assets", [
@@ -146,9 +152,16 @@ module.exports = (grunt) ->
         "jekyll:production"
     ]
 
+    # live reload
+    grunt.registerTask "lr", [
+        "livereload-start"
+        "connect"
+        "regarde"
+    ]
+
     # aliases
     grunt.registerTask "b", "build"
-    grunt.registerTask "w", "watch"
+    grunt.registerTask "w", "lr"
 
     # default task
-    grunt.registerTask "default", "watch"
+    grunt.registerTask "default", "lr"
