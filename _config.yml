@@ -1,19 +1,20 @@
-url:          "http://crdx.org"
-domain:       "crdx.org"
-title:        "crdx.org"
+url:                 "http://crdx.org"
+domain:              "crdx.org"
+title:               "crdx.org"
 
-permalink:    "/:year/:month/:day/:title/"
-paginate:     10
-destination:  "../dist/deploy"
-markdown:     "kramdown"
-lsi:          false
-future:       false
+permalink:           "/:year/:month/:day/:title/"
+paginate:            10
+destination:         "../dist/deploy"
+markdown:            "kramdown"
+lsi:                 false
+future:              false
+relative_permalinks: true
 
-exclude:      [
-                  "README.md",
-                  "Gruntfile.coffee",
-                  "package.json",
-                  "node_modules",
-                  "project.sublime-project",
-                  "project.sublime-workspace"
-              ]
+exclude: [
+            "README.md",
+            "Gruntfile.coffee",
+            "package.json",
+            "node_modules",
+            "project.sublime-project",
+            "project.sublime-workspace"
+         ]
