@@ -1,8 +1,5 @@
 path = require "path"
 
-endsWith = (str, suffix) ->
-    str.indexOf(suffix, str.length - suffix.length) != -1
-
 module.exports = (grunt) ->
     path = require("path")
 
