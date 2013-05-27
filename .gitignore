@@ -1,6 +1,10 @@
+# jekyll dirs
 _posts/
 _drafts/
+
+# some helpers
 _deploy
+open.bat
 
 node_modules/
 assets/

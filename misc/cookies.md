@@ -1,20 +1,20 @@
 ---
 layout: default
 name: cookies
-menu: misc
 permalink: /cookies/
 disqus_id: page-1
 
-title: cookies
+title: Netscape-format cookies file generator
 ---
 
-<h2 class="page-title">{{ page.title }}</h2>
+# {{ page.title }}
+{: .page-title }
 
-<p>Converts <code>document.cookie</code> into a Netscape-format cookies file which is (among other things) suitable for use with <a href="http://www.gnu.org/software/wget">wget</a>, e.g:</p>
+Converts `document.cookie` into a Netscape-format cookies file which is (among other things) suitable for use with [wget](http://www.gnu.org/software/wget), e.g:
 
-<pre>wget --load-cookies cookies.txt http://example.org</pre>
+    wget --load-cookies cookies.txt http://example.org
 
-<p><b>Note</b>: line breaks and other whitespace in the input don't matter.</p>
+**Note**: line breaks and other whitespace in the input don't matter.
 
 <table class="table table-condensed">
   <tbody>

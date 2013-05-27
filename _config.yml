@@ -1,13 +1,12 @@
-url:                 "http://crdx.org"
-domain:              "crdx.org"
-title:               "crdx.org"
-
-permalink:           "/:year/:month/:day/:title/"
-paginate:            10
-destination:         "../dist/deploy"
-markdown:            "kramdown"
-lsi:                 false
-future:              false
+url: http://crdx.org
+domain: crdx.org
+title: crdx.org
+permalink: /:year/:month/:day/:title/
+paginate: 10
+destination: ../dist/deploy
+markdown: kramdown
+lsi: false
+future: false
 relative_permalinks: true
 
 exclude: [

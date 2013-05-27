@@ -1,16 +1,17 @@
 ---
 layout: default
 name: tags
-menu: tags
+menu: blog
 permalink: /tags/
 
 title: tags
 ---
 
-<h2 class="page-title">{{ page.title }}</h2>
+# {{ page.title }}
+{: .page-title }
 
 {% for tag in site.tags %}
-  <h3 id="{{ tag[0] }}">{{ tag[0] }}</h3>
+  <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
 
   <ul>
   {% for post in tag[1] %}

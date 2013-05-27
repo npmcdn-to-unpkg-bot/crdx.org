@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <!--
-  Look, I don't like it either that using liquid templates
-  means that there's whitespace all over the place. You should
-  look at the preprocessed source instead.
+  Yes, I don't like it either that using liquid means that there's whitespace
+  all over the place. You should look at the preprocessed source instead:
+
+  https://github.com/crdx/crdx.org
 -->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <title>{% if page.title %}{{ page.title }} ({% endif %}{{ site.title }}{% if page.title %}){% endif %}</title>
 
     <link rel="alternate" title="crdx.org rss feed" href="/feed.xml" type="application/rss+xml">
 
@@ -24,8 +25,9 @@
     <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
 
     <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
+    <script type="text/javascript" src="/assets/js/things.coffee.js"></script>
     {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
-    {% if page.name == "code" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
+    {% if page.name == "index" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -42,58 +44,36 @@
     </script>
   </head>
   <body>
-    <div class="header-container">
-      <header class="site-header">
-        <a href="/"><h1>{{ site.title }}</h1></a>
-      </header>
-    </div>
-
     <div class="nav-container">
       <nav class="site-nav clearfix">
-        <ul class="nav-left">
-          <li{% if page.menu == "home" %} class="selected"{% endif %}><a href="/">home</a></li>
-          <li{% if page.menu == "archive" %} class="selected"{% endif %}><a href="/archive/">archive</a></li>
-          <li{% if page.menu == "code" %} class="selected"{% endif %}><a href="/code/">code</a></li>
-          <li{% if page.menu == "misc" %} class="selected"{% endif %}><a href="/misc/">misc</a></li>
-          <li{% if page.menu == "about" %} class="selected"{% endif %}><a href="/about/">about</a></li>
-          <li><a href="/feed.xml" target="_blank"><i class="glyphicon-rss"></i>rss</a></li>
+        <ul class="nav-internal">
+          <!-- We're running each <li> next to each other here because if you
+               don't, then an nbsp appears between each element. -->
+          <li class="index{% if page.menu == "index" %} selected{% endif %}">
+            <a href="/">crdx.org</a>
+          </li><li{% if page.menu == "about" %} class="selected"{% endif %}>
+            <a href="/about/">about</a>
+          </li><li{% if page.menu == "blog" %} class="selected"{% endif %}>
+            <a href="/blog/">words</a>
+          </li><li>
+            <a href="/feed.xml" target="_blank"><i class="glyphicon-rss"></i>rss</a>
+          </li>
         </ul>
 
-        <ul class="nav-right">
-          <li><a href="http://github.com/crdx" target="_blank"><i class="glyphicon-github"></i>github</a></li>
+        <ul class="nav-external">
           <!--<li><a href="http://twitter.com" target="_blank"><i class="glyphicon-twitter"></i>twitter</a></li>-->
-          <li><a href="http://stackoverflow.com/users/457104/crdx" target="_blank"><i class="glyphicon-stackoverflow"></i>stackoverflow</a></li>
+          <li>
+            <a href="http://github.com/crdx"><i class="glyphicon-github"></i>github</a>
+          </li><li>
+            <a href="http://stackoverflow.com/users/457104/crdx"><i class="glyphicon-stackoverflow"></i>stackoverflow</a>
+          </li>
         </ul>
       </nav>
     </div>
 
-    <div class="site-sidebar clearfix">
-      <div class="sidebar-box">
-        <div class="sidebar-title">search</div>
-        <div class="sidebar-content">
-          <form action="http://google.com/search" method="get">
-            <input name="sitesearch" type="hidden" value="{{ site.domain }}" />
-            <input type="text" name="q" placeholder="Search..." class="input-block-level" />
-          </form>
-        </div>
-      </div>
-
-      <div class="sidebar-box">
-        <div class="sidebar-title">tags</div>
-        <div class="sidebar-content">
-          <table>
-          {% for tag in site.tags %}
-            <tr>
-              <td class="tag-name"><a href="/tags/#{{ tag[0] }}">{{ tag[0] }}</a></td>
-              <td>{{ tag[1].size }}</td>
-            </tr>
-          {% endfor %}
-          </table>
-        </div>
-      </div>
-    </div>
-
   <div class="content-container clearfix">
+    {% if page.menu == "blog" %}{% include sidebar.html %}{% endif %}
+
     <div class="clearfix site-content{% if page.name %} page-{{ page.name }}{% endif %}">
       {{ content }}
     </div>

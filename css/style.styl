@@ -12,6 +12,13 @@ $nav_bg     = #ccc
 $content_bg = #e5e5e5
 $code_bg    = #fafafa
 
+$active_bg   = #c09853
+$done_bg     = #468847
+$inactive_bg = #999
+
+$project_bg       = #eee
+$project_hover_bg = #ddd
+
 $font_size = 13px
 
 // -------------------
@@ -38,29 +45,9 @@ body
 
 // container
 .content-container
-.site-header
 .site-nav
     max-width $content_width
     margin 0 auto
-
-// header
-.header-container
-    background-color $header_bg
-
-.site-header
-    color black
-
-    a
-        display block
-        padding 1em
-        color black
-
-        &:hover
-            text-decoration none
-
-        h1
-            margin 0px
-            font-size 40px
 
 // navigation
 .nav-container
@@ -73,30 +60,38 @@ body
 
         li
             display inline-block
+            margin 0
 
-            &.selected
-                background-color $content_bg
-                border-top-right-radius $tab_radius
-                border-top-left-radius $tab_radius
+        li:hover
+        li.selected
+            background-color $content_bg
+
+        li.index
+            font-weight bold
+            border-radius 0
+            background-color black
 
             a
-                padding 0.5em
-                display block
+                color $content_bg
+
+        li a
+            padding 0.5em
+            display block
+            text-decoration none
+
+            &:hover
                 text-decoration none
 
-                &:hover
-                    text-decoration none
+    ul.nav-internal
+    ul.nav-external
+        i[class^=glyphicon]
+            margin-right 0.5em
 
-        &.nav-left
-        &.nav-right
-            i[class^=glyphicon]
-                margin-right 0.5em
+    ul.nav-internal
+        float left
 
-        &.nav-left
-            float left
-
-        &.nav-right
-            float right
+    ul.nav-external
+        float right
 
 // content
 .site-content
@@ -106,6 +101,7 @@ body
     padding-bottom 0px
     overflow hidden
     width auto
+    //float left
 
 // sidebar
 .site-sidebar
@@ -132,53 +128,55 @@ body
         .sidebar-content
             padding 0.5em
 
-            ul
-                margin-bottom 0px
-                margin-left 0px
-                list-style-type none
+            a
+                text-decoration none
 
-                li
-                    margin-bottom 1em
-
-                li:last-child
-                    margin-bottom 0px
-
-            table
-                width 100%
-
-                tr:hover
-                    background-color $content_bg
-
-                .tag-name
-                    width 100%
-
-                td a
+            &.archive
+                a
                     display block
 
-                td a:hover
-                    text-decoration none
+                a:hover
+                .month:hover
+                    background-color $content_bg
 
-            form
-                margin-bottom 0px
+                .month a
+                    margin-left 1em
 
-                input
+            &.tags
+                table
                     width 100%
+
+                    .tag-name
+                        width 100%
+
+                    .tag-name a
+                        display block
+
+                    tr:hover
+                        background-color $content_bg
+
+            &.search
+                form
                     margin-bottom 0px
+
+                    input
+                        width 100%
+                        margin-bottom 0px
 
 // blog post
 .site-post
     .post-title
-        margin-bottom 0px
-        margin-top 0px
+        margin-bottom 0
+        margin-top 0
         line-height 1.2em
+        font-weight normal
 
         a
             text-decoration none
             font-size 0.9em
             color $text_color
 
-    .post-meta
-        line-height 1em
+    //.post-meta
 
     .post-content
         margin-top 1em
@@ -190,6 +188,42 @@ body
         margin-top 1em
 
 // page-specific
+.page-index
+    .project
+        color black
+        float left
+        width 48% // why is box-sizing not working with this?!
+        padding 0.5em
+        background-color $project_bg
+        margin 1%
+        border-radius 1em
+
+        &:hover
+            text-decoration none
+            background-color $project_hover_bg
+
+        .project-state
+            float left
+            border-radius 10px
+            height 10px
+            width 10px
+
+        .project-name
+            font-size 1.4em
+            text-align center
+            margin-bottom 0.25em
+            margin-top: 0.25em
+            font-weight normal
+
+    .projects-active .project-state
+        background-color $active_bg
+
+    .projects-done .project-state
+        background-color $done_bg
+
+    .projects-inactive .project-state
+        background-color $inactive_bg
+
 .page-archive
     ul
         margin-left 0px
@@ -217,38 +251,6 @@ body
 .page-tags
     ul
         list-style-type none
-/*
-.page-code
-    .project
-        float left
-        width 26%
-        //border 1px solid black
-        padding 0.5em 1em
-        //margin 0.25em
-        background-color #eee
-        margin 1%
-        border-radius 1em
-        border 1px solid #ddd
-
-    .project-name
-        font-size 1.4em
-        text-align center
-        margin-bottom 0.25em
-        margin-top: 0.25em
-
-        a
-            color black
-
-            &:hover
-                text-decoration none
-
-    .project-description
-        font-size 1em
-
-    //.project-state-active {}
-    //.project-state-done {}
-    //.project-state-inactive {}
-*/
 
 // headings
 h1
@@ -261,31 +263,29 @@ h6
 
 // bootstrap defaults are too big
 h1
-    font-size 31.5px
-
-h2
     font-size 24.5px
 
-h3
+h2
     font-size 17.5px
 
-h4
+h3
     font-size 14px
 
-h5
+h4
     font-size 11.9px
-// we don't need h6 (for now)
+// we don't need h5 and h6 (for now)
 
-h2.page-title
+h1.page-title
     margin-top 0px
     border-bottom 1px solid $header_bg
 
 // since we're pushing each heading down a notch in
-// size, revert h3 back to its default
+// size, revert some of them back to their defaults
+h2
 h3
     line-height normal
 
-// miscellaneous
+// horizontal rule
 hr
     margin-left 20%
     margin-right 20%
@@ -330,8 +330,6 @@ code
 
 // responsiveness
 @media only screen and (max-width: 600px)
-    //.site-content {}
-
     .site-sidebar
         float none !important
         margin-left auto !important
@@ -345,5 +343,9 @@ code
                 display block !important
                 width 100% !important
 
-                &.selected
-                    border-radius 0 !important
+            li.selected
+                border-radius 0 !important
+
+    .page-index .project
+        clear both
+        width 100%

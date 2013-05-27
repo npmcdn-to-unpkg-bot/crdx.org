@@ -22,11 +22,11 @@ setTooltip = ($element, msg) ->
 $ ->
     $(".project").each (i, element) ->
         $element = $ element
-        $element.css "cursor", "default"
+        $tooltipTarget = $(".project-state", $element)
 
-        $("b", $element).tooltip
+        $tooltipTarget.tooltip
             html: true
-            animation: false
+            animation: true
             trigger: "manual"
             placement: "right"
 
@@ -49,17 +49,19 @@ $ ->
             repoUrl = url.replace /0/, $element.data("repo")
 
             $.ajax dataType: "jsonp", url: repoUrl, success: (result) ->
-                if result.data
+                if result.data.commit
                     tooltipMsg = getTooltipMessage result.data.commit
-
-                    $this.data "commit", tooltipMsg
                 else
                     tooltipMsg = "unable to get commit"
 
                     if result.data.message
                         tooltipMsg += ": #{result.data.message}"
 
-                # only show it if it hasn't been cancelled
+                # store it (yes, even if it's an error message)
+                $this.data "commit", tooltipMsg
+
+                # only show it if it hasn't been cancelled and we have something
+                # to show
                 if not $this.data("cancel")
                     setTooltip $this, tooltipMsg
 
@@ -70,5 +72,4 @@ $ ->
             $this.tooltip "hide"
             $this.data "cancel", true
 
-        # tooltips on <td>s make everything jump around, so use the <b>
-        $("b", $element).hover mouseEnter, mouseLeave
+        $tooltipTarget.hover mouseEnter, mouseLeave

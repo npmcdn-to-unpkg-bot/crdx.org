@@ -14,8 +14,6 @@ This is the source of [crdx.org](http://crdx.org) which is currently generated b
 
 ### Build
 
-**Note**: "production" implies "without drafts" only.
-
 Build assets only:
 
     grunt assets
@@ -24,12 +22,12 @@ Build all with drafts:
 
     grunt drafts
 
-Build all as production:
+Build all without drafts:
 
     grunt build
 
 ### Live Reload
 
-Run the grunt task with no parameters to watch all files for changes and rebuild the website when they change. Additionally, a livereload server will start on port 9001.
+Run the grunt default task to watch all files for changes and rebuild the website when they change. Additionally, a livereload server will start on port 9001.
 
     grunt
