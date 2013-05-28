@@ -18,30 +18,6 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/style.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/glyphicons.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/highlight.min.css" />
-
-    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
-    <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
-
-    <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
-    <script type="text/javascript" src="/assets/js/things.coffee.js"></script>
-    {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
-    {% if page.name == "index" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
-
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(["_setAccount", "UA-35469939-3"]);
-      _gaq.push(["_trackPageview"]);
-
-      (function() {
-          var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
-          ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
-          var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-      hljs.initHighlightingOnLoad();
-    </script>
   </head>
   <body>
     <div class="nav-container">
@@ -78,6 +54,31 @@
       {{ content }}
     </div>
   </div>
+
+  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
+  <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
+
+  <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
+  <script type="text/javascript" src="/assets/js/things.coffee.js"></script>
+  {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
+  {% if page.name == "index" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-35469939-3"]);
+    _gaq.push(["_trackPageview"]);
+
+    (function() {
+        var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+        ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    hljs.initHighlightingOnLoad();
+  </script>
+
   </body>
 </html>
 
