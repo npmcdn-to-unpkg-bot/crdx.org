@@ -4,7 +4,7 @@ getTooltipMessage = (commit) ->
     { tree: { sha }, message, committer: { name, date }} = commit
 
     sha1 = sha[0..6]
-    timeAgo = util.timeAgo date
+    timeAgo = util.timeAgo(date)
 
     toolTip = "[#{sha1}] #{message}<br><br>(by #{name}, #{timeAgo}"
 
