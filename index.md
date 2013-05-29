@@ -90,6 +90,10 @@ Here are some other things that exist.
   </a>
 </div>
 
+## Things I've said
+
+I sometimes write things on the [blog](/blog/) page.
+
 <!--### Send me a message
 
 If you want.-->
