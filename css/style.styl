@@ -1,17 +1,19 @@
 $content_width = 700px
 $sidebar_width = 200px
 
-$tab_radius = 10px
 $box_radius = 10px
 
+// foregrounds
 $text_color = #333
 $hr_color   = #aaa
 
+// backgrounds
 $header_bg  = #bbb
 $nav_bg     = #ccc
 $content_bg = #e5e5e5
 $code_bg    = #fafafa
 
+// colours for projects
 $active_bg   = #c09853
 $done_bg     = #468847
 $inactive_bg = #999
@@ -21,15 +23,29 @@ $project_hover_bg = #ddd
 
 $font_size = 13px
 
-// -------------------
-// font
-// -------------------
+// functions
+transition()
+    -moz-transition arguments
+    -webkit-transition arguments
+    -o-transition arguments
+    transition arguments
+
+box-sizing()
+    -moz-box-sizing arguments
+    -webkit-box-sizing arguments
+    -o-box-sizing arguments
+    box-sizing arguments
+
+box-shadow()
+    -moz-box-shadow arguments
+    -webkit-box-shadow arguments
+    box-shadow arguments
+
+// fonts
 @import url("http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic")
 
 *
-    -webkit-box-sizing border-box
-    -moz-box-sizing border-box
-    box-sizing border-box
+    box-sizing(border-box)
 
 body
 input
@@ -43,7 +59,6 @@ textarea
 body
     background-color $content_bg
 
-// container
 .content-container
 .site-nav
     max-width $content_width
@@ -52,6 +67,13 @@ body
 // navigation
 .nav-container
     background-color $nav_bg
+    width 100%
+    transition(all 0.15s)
+
+.nav-container.scrolled
+    transition(all 0.15s)
+    position fixed
+    box-shadow(0px 5px 10px darken($header_bg, 20%))
 
 .site-nav
     ul
@@ -334,6 +356,10 @@ code
         float none !important
         margin-left auto !important
         margin-right auto !important
+
+    .nav-container.scrolled
+        position static
+        box-shadow(none)
 
     .site-nav
         ul
