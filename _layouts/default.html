@@ -12,6 +12,9 @@
 
     <title>{% if page.title %}{{ page.title }} ({% endif %}{{ site.title }}{% if page.title %}){% endif %}</title>
 
+    <!-- IE8+: this must be loaded first so the HTML5 polyfill applies before the elements are actually used. -->
+    <script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
+
     <link rel="alternate" title="crdx.org rss feed" href="/feed.xml" type="application/rss+xml">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
@@ -57,7 +60,6 @@
 
   <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
   <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
   <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
 
   <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
