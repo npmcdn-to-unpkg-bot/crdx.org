@@ -22,6 +22,16 @@ Click on a project to see its page on GitHub.
 </div>
 
 <div class="projects projects-done clearfix">
+  <a class="project" data-repo="ssnake" href="https://github.com/crdx/ssnake">
+    <div class="project-state"></div>
+    <div class="project-name">ssnake</div>
+  </a>
+
+  <a class="project" data-repo="latex-templates" href="https://github.com/crdx/latex-templates">
+    <div class="project-state"></div>
+    <div class="project-name">latex-templates</div>
+  </a>
+
   <a class="project" data-repo="livereload-workspace" href="https://github.com/crdx/livereload-workspace">
     <div class="project-state"></div>
     <div class="project-name">livereload-workspace</div>
@@ -92,8 +102,4 @@ Here are some other things that exist.
 
 ## Things I've said
 
-I sometimes write things on the [blog](/blog/) page.
-
-<!--### Send me a message
-
-If you want.-->
+I sometimes write things on my [blog](/blog/).
