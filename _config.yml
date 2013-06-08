@@ -15,3 +15,8 @@ exclude: [
             "package.json",
             "node_modules"
          ]
+
+jekyll_sort:
+    - src: posts
+      by: date
+      dest: posts_sorted

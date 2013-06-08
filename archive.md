@@ -11,7 +11,7 @@ title: archive
 {: .page-title }
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.posts_sorted %}
     {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
     {% unless year == post_year %}{% assign year = post_year %}<a name="y{{ year }}"></a><h2>{{ year }}</h2>{% endunless %}
     {% capture post_month %}{{ post.date | date: "%B" }}{% endcapture %}
