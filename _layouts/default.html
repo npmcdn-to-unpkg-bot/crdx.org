@@ -22,9 +22,9 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/glyphicons.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/highlight.min.css" />
   </head>
-  <body>
-    <div class="nav-container">
-      <nav class="site-nav clearfix">
+  <body{% if page.menu == "blog" %} class="has-sidebar"{% endif %}>
+    <div class="nav-container clearfix">
+      <nav class="nav">
         <ul class="nav-internal">
           <!-- We're running each <li> next to each other here because if you
                don't, then an nbsp appears between each element. -->
@@ -50,10 +50,10 @@
       </nav>
     </div>
 
-  <div class="content-container clearfix">
+  <div class="content-container">
     {% if page.menu == "blog" %}{% include sidebar.html %}{% endif %}
 
-    <div class="clearfix site-content{% if page.name %} page-{{ page.name }}{% endif %}">
+    <div class="content{% if page.name %} page-{{ page.name }}{% endif %}">
       {{ content }}
     </div>
   </div>
