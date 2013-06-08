@@ -8,10 +8,10 @@ $text_color = #333
 $hr_color   = #aaa
 
 // backgrounds
-$header_bg  = #bbb
-$nav_bg     = #ccc
-$content_bg = #e5e5e5
-$code_bg    = #fafafa
+$header_bg          = #bbb
+$nav_bg             = #ccc
+$content_bg         = #e5e5e5
+$content_content_bg = #fafafa
 
 // colours for projects
 $active_bg   = #c09853
@@ -73,6 +73,7 @@ body
 .nav-container.scrolled
     transition(all 0.15s)
     position fixed
+    z-index 1
     box-shadow(0px 5px 10px darken($header_bg, 20%))
 
 .site-nav
@@ -337,7 +338,7 @@ pre
 pre
 code
     border-radius 0.5em
-    background-color $code_bg
+    background-color $content_content_bg
 
 code
     color $text_color
