@@ -1,0 +1,487 @@
+@content_width: 45em;
+@sidebar_width: 15em;
+@nav_height: 3em;
+@nav_mobile_height: 2.5em;
+
+@breakpoint_1: 55em;
+@breakpoint_2: 35em;
+
+@box_radius: 1em;
+
+// foregrounds
+@text_fg: #333;
+@hr_color: #aaa;
+
+// backgrounds
+@header_bg: #bbb;
+@nav_bg: #ccc;
+@content_bg: #e5e5e5;
+@content_content_bg: #fafafa;
+
+// colours for project statuses
+@active_bg: #c09853;
+@done_bg: #468847;
+@inactive_bg: #999;
+
+@project_bg: #eee;
+@project_hover_bg: #ddd;
+
+@font_size: 13px;
+
+// functions
+.transition(@args) {
+    -moz-transition: @args;
+    -webkit-transition: @args;
+    -o-transition: @args;
+    transition: @args;
+}
+
+.box-sizing(@args) {
+    -moz-box-sizing: @args;
+    -webkit-box-sizing: @args;
+    -o-box-sizing: @args;
+    box-sizing: @args;
+}
+
+.box-shadow(@args) {
+    -moz-box-shadow: @args;
+    -webkit-box-shadow: @args;
+    box-shadow: @args;
+}
+
+// fonts
+@import url("http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic");
+
+* {
+    .box-sizing(border-box);
+}
+
+body,
+input,
+button,
+label,
+select,
+textarea {
+    font-family: "Noto Sans";
+    font-size: @font_size !important; // thanks, bootstrap!
+}
+
+body {
+    background-color: @content_bg;
+}
+
+// special styles for when we're scrolling
+body.scrolled {
+    .nav-container {
+        .transition(all 0.3s);
+        .box-shadow(0px 5px 10px darken(@header_bg, 20%));
+        margin-top: 0;
+    }
+}
+
+// special styles for when we have a sidebar visible
+body.has-sidebar {
+    .content-container,
+    .nav {
+        max-width: @content_width + @sidebar_width;
+    }
+
+    .content {
+        max-width: @content_width;
+    }
+}
+
+// navigation
+.nav-container {
+    .transition(all 0.3s);
+    position: fixed;
+    z-index: 1;
+    background-color: @nav_bg;
+    width: 100%;
+}
+
+.nav {
+    max-width: @content_width;
+    margin: 0 auto;
+
+    ul {
+        margin: 0px;
+        list-style-type: none;
+
+        li {
+            height: @nav_height;
+            display: inline-block;
+            margin: 0;
+        }
+
+        li:hover,
+        li.selected {
+            background-color: @content_bg;
+        }
+
+        li.index {
+            font-weight: bold;
+            border-radius: 0;
+            background-color: black;
+        }
+
+        li.index a {
+            color: @content_bg;
+        }
+
+        li a {
+            padding: 0 0.5em;
+            display: block;
+            text-decoration: none;
+            line-height: @nav_height;
+            font-size: 1.1em;
+        }
+
+        li a:hover {
+            text-decoration: none;
+        }
+    }
+
+    ul.nav-internal,
+    ul.nav-external {
+        i[class^=glyphicon] {
+            margin-right: 0.5em;
+        }
+    }
+
+    ul.nav-internal {
+        float: left;
+    }
+
+    ul.nav-external {
+        float: right;
+    }
+}
+
+// content
+.content-container {
+    max-width: @content_width;
+    margin: 0 auto;
+    padding-top: @nav_height;
+}
+
+.content {
+    padding-top: 0.5em;
+}
+
+.sidebar-container {
+    width: @sidebar_width;
+    float: right;
+    padding: 1em;
+}
+
+.sidebar-box {
+    background-color: @nav_bg;
+    border-radius: @box_radius;
+    border: 1px solid @header_bg;
+    margin-bottom: 1em;
+
+    .sidebar-title {
+        font-weight: bold;
+        text-align: center;
+        border-top-left-radius: @box_radius;
+        border-top-right-radius: @box_radius;
+        width: 100%;
+        background-color: @header_bg;
+    }
+
+    .sidebar-content {
+        padding: 0.5em;
+
+        a {
+            text-decoration: none;
+        }
+
+        &.archive {
+            a {
+                display: block;
+            }
+
+            a:hover,
+            .month:hover {
+                background-color: @content_bg;
+            }
+
+            .month a {
+                margin-left: 1em;
+            }
+        }
+
+        &.tags {
+            table {
+                width: 100%;
+
+                tr:hover {
+                    background-color: @content_bg;
+                }
+            }
+
+            .tag-name {
+                width: 100%;
+            }
+
+            .tag-name a {
+                display: block;
+            }
+        }
+
+        &.search {
+            form {
+                margin-bottom: 0px;
+
+                input {
+                    width: 100%;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+// post
+.post {
+    h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        line-height: 1.2em;
+        font-weight: normal;
+
+        a {
+            text-decoration: none;
+            font-size: 0.9em;
+            color: @text_fg;
+        }
+    }
+
+    .post-meta {
+        font-style: italic;
+    }
+
+    .post-content {
+        margin-top: 1em;
+
+        a:visited {
+            color: darken(blue, 20%);
+        }
+    }
+
+    .post-comments {
+        margin-top: 1em;
+    }
+}
+
+// page-specific
+.page-index {
+    .project {
+        color: black;
+        float: left;
+        width: 48%; // why is box-sizing not working with this?!
+        padding: 0.5em;
+        background-color: @project_bg;
+        margin: 1%;
+        border-radius: 1em;
+
+        &:hover {
+            text-decoration: none;
+            background-color: @project_hover_bg;
+        }
+
+        .project-state {
+            float: left;
+            border-radius: 10px;
+            height: 10px;
+            width: 10px;
+        }
+
+        .project-name {
+            font-size: 1.4em;
+            text-align: center;
+            margin-bottom: 0.25em;
+            margin-top: 0.25em;
+            font-weight: normal;
+        }
+    }
+
+    .projects-active .project-state {
+        background-color: @active_bg;
+    }
+
+    .projects-done .project-state {
+        background-color: @done_bg;
+    }
+
+    .projects-inactive .project-state {
+        background-color: @inactive_bg;
+    }
+}
+
+.page-archive {
+    ul {
+        margin-left: 0px;
+
+        li {
+            list-style-type: none;
+        }
+
+        .day {
+            font-weight: bold;
+        }
+    }
+}
+
+.page-cookies {
+    #input,
+    #output {
+        font-family: monospace;
+    }
+
+    #output {
+        white-space: pre;
+        overflow: auto;
+    }
+
+    textarea,
+    input {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+.page-tags {
+    ul {
+        list-style-type: none;
+    }
+}
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+// bootstrap defaults are too big
+// we don't need h5 and h6 (for now)
+h1 { font-size: 24.5px; }
+h2 { font-size: 17.5px; }
+h3 { font-size: 14px; }
+h4 { font-size: 11.9px; }
+
+h1.page-title {
+    margin-top: 0px;
+    border-bottom: 1px solid @header_bg;
+}
+
+// since we're pushing each heading down a notch in
+// size, revert some of them back to their defaults
+h2, h3 {
+    line-height: normal;
+}
+
+// horizontal rule
+hr {
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1px solid @hr_color;
+    border-bottom: 0px;
+}
+
+// bootstrap default blue is way too common now so lighten it up a bit
+a {
+    color: lighten(blue, 10%);
+}
+
+// silly glyphicon
+i.glyphicon-stackoverflow {
+    background-image: url("/img/so.png");
+    background-position: 0px 0px;
+}
+
+// code blocks and inline code
+pre,
+pre > code {
+    white-space: pre;
+}
+
+pre {
+    border: 0px;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    overflow: auto;
+    word-wrap: normal;
+}
+
+pre,
+code {
+    border-radius: 0.5em;
+    background-color: @content_content_bg;
+}
+
+code {
+    color: @text_fg;
+}
+
+// bootstrap tooltip
+.tooltip {
+    font-size: 1em;
+}
+
+// responsiveness
+@media only screen and (max-width: @breakpoint_2) {
+    .content-container {
+        margin: 0 1em 1em 1em !important;
+        padding-top: 0.5em;
+
+        .content {
+            max-width: 100% !important;
+        }
+    }
+
+    .sidebar-container {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    body.scrolled .nav-container {
+        .box-shadow(none);
+    }
+
+    .nav-container {
+        position: static;
+    }
+
+    .nav {
+        ul {
+            float: none !important;
+
+            li {
+                display: block !important;
+                width: 100% !important;
+                height: @nav_mobile_height !important;
+            }
+
+            li a {
+                line-height: @nav_mobile_height !important;
+            }
+
+            li.selected {
+                border-radius: 0 !important;
+            }
+        }
+    }
+
+    .page-index .project {
+        clear: both;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: @breakpoint_1) {
+    .content-container {
+        padding-left: 1em;
+    }
+}

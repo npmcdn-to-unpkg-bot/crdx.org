@@ -43,13 +43,13 @@ module.exports = (grunt) ->
                 src: "js/*.js"
                 dest: "assets/"
 
-        stylus:
+        less:
             options:
                 compress: true
             all:
                 expand: true
                 ext: ".min.css"
-                src: "css/*.styl"
+                src: "css/*.less"
                 dest: "assets/"
 
         cssmin:
@@ -79,9 +79,9 @@ module.exports = (grunt) ->
             coffee:
                 files: "js/*.coffee"
                 tasks: ["coffee:all", "jekyll:production", "livereload"]
-            stylus:
-                files: "css/*.styl"
-                tasks: ["stylus:all", "jekyll:production", "livereload"]
+            less:
+                files: "css/*.less"
+                tasks: ["less:all", "jekyll:production", "livereload"]
             cssmin:
                 files: "css/*.css"
                 tasks: ["cssmin:all", "jekyll:production", "livereload"]
@@ -95,7 +95,7 @@ module.exports = (grunt) ->
                 files: ["*", "_*/**", "misc/**"]
                 tasks: ["jekyll:production", "livereload"]
 
-    grunt.loadNpmTasks "grunt-contrib-stylus"
+    grunt.loadNpmTasks "grunt-contrib-less"
     grunt.loadNpmTasks "grunt-contrib-cssmin"
     grunt.loadNpmTasks "grunt-contrib-uglify"
     grunt.loadNpmTasks "grunt-contrib-coffee"
@@ -130,14 +130,14 @@ module.exports = (grunt) ->
         # When a change occurs, override the source to be just that file, rather
         # than all the files defined above. This means that only the changed
         # file will be recompiled and not everything.
-        for task in ["coffee", "stylus", "cssmin", "uglify"]
+        for task in ["coffee", "less", "cssmin", "uglify"]
             if grunt.file.isMatch(grunt.config("regarde.#{task}.files"), filePath)
                 grunt.config "#{task}.all.src", filePath
 
     grunt.registerTask "assets", [
         "coffee" # *.coffee -> *.js
         "uglify" # *.js     -> *.min.js
-        "stylus" # *.styl   -> *.css
+        "less"   # *.less   -> *.css
         "cssmin" # *.css    -> *.min.css
         "copy:images"
     ]
