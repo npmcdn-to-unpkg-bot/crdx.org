@@ -26,8 +26,12 @@ Build all without drafts:
 
     grunt build
 
-### Live Reload
+### Development
 
-Run the grunt default task to watch all files for changes and rebuild the website when they change. Additionally, a livereload server will start on port 9001.
+Run the grunt default task to watch all files for changes and rebuild the website when they change.
 
     grunt
+
+#### Live Reload
+
+Additionally, a livereload server will start on port 9001.
