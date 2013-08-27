@@ -40,4 +40,4 @@ Converts `document.cookie` into a Netscape-format cookies file which is (among o
   </tbody>
 </table>
 
-{% include disqus.html %}
+{% include disqus-comments.html %}
