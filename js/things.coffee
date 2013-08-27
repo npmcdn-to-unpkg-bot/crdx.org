@@ -4,4 +4,4 @@ $ ->
     links.attr "target", "_blank"
 
     $(window).on "scroll", (event) ->
-        $("body").toggleClass "scrolled", $(window).scrollTop() > 0
+        $("body").toggleClass "is-scrolled", $(window).scrollTop() > 0

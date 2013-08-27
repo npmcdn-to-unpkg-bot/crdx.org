@@ -47,10 +47,8 @@ module.exports = (grunt) ->
             options:
                 compress: true
             all:
-                expand: true
-                ext: ".min.css"
-                src: "css/*.less"
-                dest: "assets/"
+                files:
+                    "assets/css/main.min.css": "less/main.less"
 
         cssmin:
             options:
@@ -80,7 +78,7 @@ module.exports = (grunt) ->
                 files: "js/*.coffee"
                 tasks: ["coffee:all", "jekyll:production", "livereload"]
             less:
-                files: "css/*.less"
+                files: "less/*.less"
                 tasks: ["less:all", "jekyll:production", "livereload"]
             cssmin:
                 files: "css/*.css"
@@ -130,7 +128,7 @@ module.exports = (grunt) ->
         # When a change occurs, override the source to be just that file, rather
         # than all the files defined above. This means that only the changed
         # file will be recompiled and not everything.
-        for task in ["coffee", "less", "cssmin", "uglify"]
+        for task in ["coffee", "cssmin", "uglify"]
             if grunt.file.isMatch(grunt.config("regarde.#{task}.files"), filePath)
                 grunt.config "#{task}.all.src", filePath
 

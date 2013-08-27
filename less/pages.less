@@ -1,0 +1,71 @@
+.page-index {
+    .project {
+        color: black;
+        float: left;
+        width: 48%; // why is box-sizing not working with this?!
+        padding: @half_gap;
+        background-color: @project_bg;
+        margin: 1%;
+        border-radius: @radius;
+
+        &:hover {
+            text-decoration: none;
+            background-color: @project_hover_bg;
+        }
+
+        .project-state {
+            float: left;
+            border-radius: 10px;
+            height: 10px;
+            width: 10px;
+        }
+
+        .project-name {
+            font-size: 1.4em;
+            text-align: center;
+            margin-bottom: 0.25em;
+            margin-top: 0.25em;
+            font-weight: normal;
+        }
+    }
+
+    .projects-active   .project-state { background-color: @active_bg; }
+    .projects-done     .project-state { background-color: @done_bg; }
+    .projects-inactive .project-state { background-color: @inactive_bg; }
+}
+
+.page-archive {
+    ul {
+        margin-left: 0px;
+
+        li {
+            list-style-type: none;
+        }
+
+        .day {
+            font-weight: bold;
+        }
+    }
+}
+
+.page-cookies {
+    #input, #output {
+        font-family: monospace;
+    }
+
+    #output {
+        white-space: pre;
+        overflow: auto;
+    }
+
+    textarea, input {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+}
+
+.page-tags {
+    ul {
+        list-style-type: none;
+    }
+}
