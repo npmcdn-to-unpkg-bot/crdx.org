@@ -19,57 +19,56 @@ setTooltip = ($element, msg) ->
         .tooltip("fixTitle")
         .tooltip("show")
 
-$ ->
-    $(".project").each (i, element) ->
-        $element = $ element
-        $tooltipTarget = $(".project-state", $element)
+$(".project").each (i, element) ->
+    $element = $ element
+    $tooltipTarget = $(".project-state", $element)
 
-        $tooltipTarget.tooltip
-            html: true
-            animation: true
-            trigger: "manual"
-            placement: "right"
+    $tooltipTarget.tooltip
+        html: true
+        animation: true
+        trigger: "manual"
+        placement: "right"
 
-        mouseEnter = ->
-            $this = $ @
+    mouseEnter = ->
+        $this = $ @
 
-            # if it's in the cache, just show and quit
-            if $this.data "commit"
-                setTooltip $this, $this.data("commit")
-                $this.tooltip "show"
-                return
-
-            # not in the cache, so show the "loading" tooltip
-            setTooltip $this, "<i class='w-glyphicon-clock'></i> Loading..."
+        # if it's in the cache, just show and quit
+        if $this.data "commit"
+            setTooltip $this, $this.data("commit")
             $this.tooltip "show"
+            return
 
-            # reset cancelled flag
-            $this.data "cancel", false
+        # not in the cache, so show the "loading" tooltip
+        setTooltip $this, "<i class='w-glyphicon-clock'></i> Loading..."
+        $this.tooltip "show"
 
-            repoUrl = url.replace /0/, $element.data("repo")
+        # reset cancelled flag
+        $this.data "cancel", false
 
-            $.ajax dataType: "jsonp", url: repoUrl, success: (result) ->
-                if result.data.commit
-                    tooltipMsg = getTooltipMessage result.data.commit
-                else
-                    tooltipMsg = "unable to get commit"
+        repoUrl = url.replace /0/, $element.data("repo")
 
-                    if result.data.message
-                        tooltipMsg += ": #{result.data.message}"
+        $.ajax dataType: "jsonp", url: repoUrl, success: (result) ->
+            if result.data.commit
+                tooltipMsg = getTooltipMessage result.data.commit
+            else
+                tooltipMsg = "unable to get commit"
 
-                # store it (yes, even if it's an error message)
-                $this.data "commit", tooltipMsg
+                if result.data.message
+                    tooltipMsg += ": #{result.data.message}"
 
-                # only show it if it hasn't been cancelled and we have something
-                # to show
-                if not $this.data("cancel")
-                    setTooltip $this, tooltipMsg
+            # store it (yes, even if it's an error message)
+            $this.data "commit", tooltipMsg
 
-        mouseLeave = ->
-            $this = $ @
+            # only show it if it hasn't been cancelled and we have something
+            # to show
+            if not $this.data("cancel")
+                setTooltip $this, tooltipMsg
 
-            # hide the tooltip, and cancel any future tooltip-showing operations
-            $this.tooltip "hide"
-            $this.data "cancel", true
+    mouseLeave = ->
+        $this = $ @
 
-        $tooltipTarget.hover mouseEnter, mouseLeave
+        # hide the tooltip, and cancel any future tooltip-showing operations
+        $this.tooltip "hide"
+        $this.data "cancel", true
+
+    $tooltipTarget.hover mouseEnter, mouseLeave
