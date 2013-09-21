@@ -1,9 +1,8 @@
 path = require "path"
 lrSnippet = require("grunt-contrib-livereload/lib/utils").livereloadSnippet
+matchdep = require "matchdep"
 
 module.exports = (grunt) ->
-    path = require("path")
-
     grunt.initConfig
         pkg: grunt.file.readJSON "package.json"
         yaml: grunt.file.readYAML "_config.yml"
@@ -93,15 +92,9 @@ module.exports = (grunt) ->
                 files: ["*", "_*/**", "misc/**"]
                 tasks: ["jekyll:production", "livereload"]
 
-    grunt.loadNpmTasks "grunt-contrib-less"
-    grunt.loadNpmTasks "grunt-contrib-cssmin"
-    grunt.loadNpmTasks "grunt-contrib-uglify"
-    grunt.loadNpmTasks "grunt-contrib-coffee"
-    grunt.loadNpmTasks "grunt-contrib-clean"
-    grunt.loadNpmTasks "grunt-contrib-copy"
-    grunt.loadNpmTasks "grunt-regarde"
-    grunt.loadNpmTasks "grunt-contrib-connect"
-    grunt.loadNpmTasks "grunt-contrib-livereload"
+    matchdep.filter("grunt-*").forEach (pkg) ->
+        console.log "Loading #{pkg}"
+        grunt.loadNpmTasks pkg
 
     # jekyll
     grunt.registerMultiTask "jekyll", ->
@@ -133,10 +126,10 @@ module.exports = (grunt) ->
                 grunt.config "#{task}.all.src", filePath
 
     grunt.registerTask "assets", [
-        "coffee" # *.coffee -> *.js
-        "uglify" # *.js     -> *.min.js
-        "less"   # *.less   -> *.css
-        "cssmin" # *.css    -> *.min.css
+        "coffee"            # *.coffee -> *.js
+        "uglify"            # *.js     -> *.min.js
+        "less"              # *.less   -> *.css
+        "cssmin"            # *.css    -> *.min.css
         "copy:images"
     ]
 
