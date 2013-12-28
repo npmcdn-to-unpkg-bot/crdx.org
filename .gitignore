@@ -4,7 +4,7 @@ _drafts/
 
 # some helpers
 _deploy
-sublime.bat
+open.bat
 
 node_modules/
 assets/
