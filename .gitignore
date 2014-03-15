@@ -6,5 +6,9 @@ _drafts/
 _deploy
 open.bat
 
+# dirs
 node_modules/
 assets/
+
+# WebStorm
+.idea
