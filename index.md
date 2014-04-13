@@ -10,9 +10,9 @@ permalink: /
 
 ## Look at my code
 
-I keep all my public stuff on [GitHub](https://github.com/crdx) and use [BitBucket](http://bitbucket.org/crdx) for private projects (it's pretty good these days).
+I keep all my public stuff on [GitHub](https://github.com/crdx) and use [BitBucket](http://bitbucket.org/crdx) for private projects.
 
-Click on a project to see its page on GitHub.
+Click on a project to see its page on GitHub. Hover over or tap the status icon to see the latest commit.
 
 <div class="projects projects-active clearfix">
   <a class="project" data-repo="crdx.org" href="https://github.com/crdx/crdx.org">
@@ -102,4 +102,4 @@ Here are some other things that exist.
 
 ## Things I've said
 
-I sometimes write things on my [blog](/blog/).
+I sometimes write things on my [blog](/blog/) (but not much lately).
