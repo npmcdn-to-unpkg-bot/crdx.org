@@ -3,7 +3,7 @@ domain: crdx.org
 title: crdx.org
 permalink: /:year/:month/:day/:title/
 paginate: 10
-destination: ../dist/deploy
+destination: _site/htdocs
 markdown: kramdown
 lsi: false
 future: false
@@ -13,7 +13,10 @@ exclude: [
             "README.md",
             "Gruntfile.coffee",
             "package.json",
-            "node_modules"
+            "node_modules",
+            "open.bat",
+            "deploy",
+            "LICENCE.md"
          ]
 
 jekyll_sort:
