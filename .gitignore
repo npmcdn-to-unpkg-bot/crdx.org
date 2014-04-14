@@ -1,9 +1,10 @@
 # jekyll dirs
 _posts/
 _drafts/
+_site/
 
 # some helpers
-_deploy
+deploy
 open.bat
 
 # dirs
