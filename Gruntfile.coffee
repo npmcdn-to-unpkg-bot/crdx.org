@@ -14,7 +14,7 @@ module.exports = (grunt) ->
             livereload:
                 options:
                     port: 9001
-                    base: "../dist/deploy"
+                    base: "_site/htdocs"
                     middleware: (connect, options) ->
                         [lrSnippet, connect.static path.resolve(options.base)]
 
@@ -89,7 +89,15 @@ module.exports = (grunt) ->
                 files: "img/*"
                 tasks: ["copy:images", "jekyll:production", "livereload"]
             jekyll:
-                files: ["*", "_*/**", "misc/**"]
+                files: [
+                  "*",
+                  "_drafts/**"
+                  "_includes/**"
+                  "_layouts/**"
+                  "_plugins/**"
+                  "_posts/**"
+                  "misc/**"
+                ]
                 tasks: ["jekyll:production", "livereload"]
 
     matchdep.filter("grunt-*").forEach (pkg) ->
@@ -150,9 +158,11 @@ module.exports = (grunt) ->
         "regarde"
     ]
 
+    grunt.registerTask "watch", "lr"
+
     # aliases
     grunt.registerTask "b", "build"
-    grunt.registerTask "w", "lr"
+    grunt.registerTask "w", "watch"
 
     # default task
-    grunt.registerTask "default", "lr"
+    grunt.registerTask "default", "watch"
