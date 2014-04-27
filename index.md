@@ -8,38 +8,17 @@ permalink: /
 # Hello
 {: .page-title }
 
-## Look at my code
-
 I keep all my public stuff on [GitHub](https://github.com/crdx) and use [BitBucket](http://bitbucket.org/crdx) for private projects.
 
-Click on a project to see its page on GitHub. Hover over or tap the status icon to see the latest commit.
+Click on a project to see its page on GitHub. Hover over or tap the icon to see the latest commit.
 
 <div class="projects projects-active clearfix">
-  <a class="project" data-repo="crdx.org" href="https://github.com/crdx/crdx.org">
-    <div class="project-state"></div>
-    <div class="project-name">crdx.org</div>
-  </a>
 </div>
 
 <div class="projects projects-done clearfix">
   <a class="project" data-repo="ssnake" href="https://github.com/crdx/ssnake">
     <div class="project-state"></div>
     <div class="project-name">ssnake</div>
-  </a>
-
-  <a class="project" data-repo="latex-templates" href="https://github.com/crdx/latex-templates">
-    <div class="project-state"></div>
-    <div class="project-name">latex-templates</div>
-  </a>
-
-  <a class="project" data-repo="livereload-workspace" href="https://github.com/crdx/livereload-workspace">
-    <div class="project-state"></div>
-    <div class="project-name">livereload-workspace</div>
-  </a>
-
-  <a class="project" data-repo="quassel-styles" href="https://github.com/crdx/quassel-styles">
-    <div class="project-state"></div>
-    <div class="project-name">quassel-styles</div>
   </a>
 
   <a class="project" data-repo="markdowns" href="https://github.com/crdx/markdowns">
@@ -71,28 +50,14 @@ Click on a project to see its page on GitHub. Hover over or tap the status icon 
     <div class="project-state"></div>
     <div class="project-name">Graph</div>
   </a>
-
-  <a class="project" data-repo="trivia-mrc" href="https://github.com/crdx/trivia-mrc">
-    <div class="project-state"></div>
-    <div class="project-name">trivia-mrc</div>
-  </a>
-
-  <a class="project" data-repo="utorrent-mrc" href="https://github.com/crdx/utorrent-mrc">
-    <div class="project-state"></div>
-    <div class="project-name">utorrent-mrc</div>
-  </a>
 </div>
 
 <div class="projects projects-inactive clearfix">
-  <a class="project project-state-inactive">
-    <div class="project-state"></div>
-    <div class="project-name">lanix</div>
-  </a>
 </div>
 
-## Look at these things, too
+## Look at this
 
-Here are some other things that exist.
+Here are some things that exist.
 
 <div class="projects clearfix">
   <a href="/misc/cookies/" class="project">
