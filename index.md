@@ -102,4 +102,4 @@ Here are some other things that exist.
 
 ## Things I've said
 
-I sometimes write things on my [blog](/blog/) (but not much lately).
+I sometimes write things on my [blog](/blog/).

@@ -1,7 +1,7 @@
 url: http://crdx.org
 domain: crdx.org
 title: crdx.org
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title
 paginate: 10
 destination: _site/htdocs
 markdown: kramdown
