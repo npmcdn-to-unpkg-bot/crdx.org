@@ -90,13 +90,9 @@ module.exports = (grunt) ->
                 tasks: ["copy:images", "jekyll:production", "livereload"]
             jekyll:
                 files: [
-                  "*",
-                  "_drafts/**"
-                  "_includes/**"
-                  "_layouts/**"
-                  "_plugins/**"
-                  "_posts/**"
-                  "misc/**"
+                  "*",                                              # individual files in the root
+                  "_{drafts,includes,layouts,plugins,posts}/**"     # all of jekyll's _underscore directories (except _site!)
+                  "misc/**"                                         # all of misc
                 ]
                 tasks: ["jekyll:production", "livereload"]
 
