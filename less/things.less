@@ -1,7 +1,7 @@
 @import url("http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic");
 
 * {
-    .box-sizing(border-box);
+  .box-sizing(border-box);
 }
 
 body,
@@ -10,91 +10,102 @@ button,
 label,
 select,
 textarea {
-    font-family: "Noto Sans";
-    font-size: @font_size !important; // thanks, bootstrap!
+  font-family: "Noto Sans";
+  font-size: @font_size !important; // thanks, bootstrap!
 }
 
 body {
-    background-color: @content_bg;
+  background-color: @content_bg;
 }
 
 // headings
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 // bootstrap defaults are too big, and we don't need h5 and h6 (for now)
-h1 { font-size: 24.5px; }
-h2 { font-size: 17.5px; }
-h3 { font-size: 14px;   }
-h4 { font-size: 11.9px; }
+h1 {
+  font-size: 24.5px;
+}
+
+h2 {
+  font-size: 17.5px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 11.9px;
+}
 
 h1.page-title {
-    margin-top: 0px;
-    border-bottom: 1px solid @header_bg;
+  margin-top: 0px;
+  border-bottom: 1px solid @header_bg;
 }
 
 // revert some headings back to their defaults
 h2, h3 {
-    line-height: normal;
+  line-height: normal;
 }
 
 // horizontal rule
 hr {
-    margin-left: 20%;
-    margin-right: 20%;
-    border: 1px solid @hr_color;
-    border-bottom: 0px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid @hr_color;
+  border-bottom: 0px;
 }
 
 // bootstrap default blue is way too common now so lighten it up a bit
 a {
-    color: lighten(blue, 10%);
+  color: lighten(blue, 10%);
 }
 
 // stackoverflow glyphicon
 i.glyphicon-stackoverflow {
-    background-image: url("/img/so.png");
-    background-position: 0px 0px;
+  background-image: url("/img/so.png");
+  background-position: 0px 0px;
 }
 
 // code blocks and inline code
 pre, pre > code {
-    white-space: pre;
+  white-space: pre;
 }
 
 pre {
-    border: 0px;
-    border-radius: @half_radius;
-    padding: @half_gap;
-    overflow: auto;
-    word-wrap: normal;
+  border: 0px;
+  border-radius: @half_radius;
+  padding: @half_gap;
+  overflow: auto;
+  word-wrap: normal;
 }
 
 pre, code {
-    border-radius: @half_radius;
-    background-color: @content_content_bg;
+  border-radius: @half_radius;
+  background-color: @content_content_bg;
 }
 
 code {
-    color: @text_fg;
+  color: @text_fg;
 }
 
 // bootstrap tooltip
 .tooltip {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 // blockquotes
 blockquote {
-    border: 0;
-    padding: @gap;
-    border-radius: @half_radius;
-    background-color: @content_content_bg;
+  border: 0;
+  padding: @gap;
+  border-radius: @half_radius;
+  background-color: @content_content_bg;
 
-    p {
-      font-size: 1em;
-    }
+  p {
+    font-size: 1em;
+  }
 }
 
 .box-container {

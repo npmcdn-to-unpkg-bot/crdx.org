@@ -1,71 +1,71 @@
 .nav-container {
-    .transition(all 0.3s);
-    position: fixed;
-    z-index: 1;
-    background-color: @nav_bg;
-    width: 100%;
+  .transition(all 0.3s);
+  position: fixed;
+  z-index: 1;
+  background-color: @nav_bg;
+  width: 100%;
 
-    body.is-scrolled & {
-        .transition(all 0.3s);
-        .box-shadow(0px 5px 10px darken(@header_bg, 20%));
-        margin-top: 0;
-    }
+  body.is-scrolled & {
+    .transition(all 0.3s);
+    .box-shadow(0px 5px 10px darken(@header_bg, 20%));
+    margin-top: 0;
+  }
 }
 
 .nav {
-    max-width: @content_width;
-    margin: 0 auto;
+  max-width: @content_width;
+  margin: 0 auto;
 
-    ul {
-        margin: 0px;
-        list-style-type: none;
+  ul {
+    margin: 0px;
+    list-style-type: none;
 
-        li {
-            height: @nav_height;
-            display: inline-block;
-            margin: 0;
-        }
-
-        li:hover,
-        li.selected {
-            background-color: @content_bg;
-        }
-
-        li.index {
-            font-weight: bold;
-            border-radius: 0;
-            background-color: black;
-        }
-
-        li.index a {
-            color: @content_bg;
-        }
-
-        li a {
-            padding: 0 @half_gap;
-            display: block;
-            text-decoration: none;
-            line-height: @nav_height;
-            font-size: 1.1em;
-        }
-
-        li a:hover {
-            text-decoration: none;
-        }
+    li {
+      height: @nav_height;
+      display: inline-block;
+      margin: 0;
     }
 
-    ul.nav-internal,
-    ul.nav-external {
-        i[class^=glyphicon] {
-            margin-right: @half_gap;
-        }
+    li:hover,
+    li.selected {
+      background-color: @content_bg;
     }
 
-    ul.nav-internal {
-        float: left;
+    li.index {
+      font-weight: bold;
+      border-radius: 0;
+      background-color: black;
     }
 
-    ul.nav-external {
-        float: right;
+    li.index a {
+      color: @content_bg;
     }
+
+    li a {
+      padding: 0 @half_gap;
+      display: block;
+      text-decoration: none;
+      line-height: @nav_height;
+      font-size: 1.1em;
+    }
+
+    li a:hover {
+      text-decoration: none;
+    }
+  }
+
+  ul.nav-internal,
+  ul.nav-external {
+    i[class^=glyphicon] {
+      margin-right: @half_gap;
+    }
+  }
+
+  ul.nav-internal {
+    float: left;
+  }
+
+  ul.nav-external {
+    float: right;
+  }
 }
