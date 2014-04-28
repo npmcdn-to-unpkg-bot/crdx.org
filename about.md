@@ -7,8 +7,8 @@ permalink: /about/
 title: about
 ---
 
-# {{ page.title }}
-{: .page-title }
+<!--# {{ page.title }}
+{: .page-title }-->
 
 ## What's wrong with this place?
 
