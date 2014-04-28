@@ -31,13 +31,14 @@
   }
 }
 
-.page-archive {
+.page-archive,
+.page-tags {
   td:first-child {
     padding-right: @gap;
+  }
 
-    .day {
-      font-weight: bold;
-    }
+  .day td:first-child {
+    text-align: right;
   }
 }
 
@@ -54,11 +55,5 @@
   textarea, input {
     width: 100%;
     margin-bottom: 0px;
-  }
-}
-
-.page-tags {
-  ul {
-    list-style-type: none;
   }
 }

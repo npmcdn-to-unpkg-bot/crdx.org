@@ -12,22 +12,20 @@ title: archive
 
 <table>
   {% for post in site.posts_sorted %}
-    {% capture post_year %}
-      {{ post.date | date: "%Y" }}
-    {% endcapture %}
+
+  {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
 
     {% unless year == post_year %}
       {% assign year = post_year %}
-      <tr>
+      <tr class="year">
         <td colspan="2">
-          <a name="y{{ year }}"></a>
-          <h2>{{ year }}</h2>
+          <h2 id="y{{ year }}">{{ year }}</h2>
         </td>
       </tr>
     {% endunless %}
 
-    <tr>
-      <td>{{ post.date | date: "%b %d" }}</td>
+    <tr class="day">
+      <td>{{ post.date | date: "%B %d" }}</td>
       <td><a href="{{ post.url }}">{{ post.title }}</a></td>
     </tr>
   {% endfor %}

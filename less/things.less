@@ -108,27 +108,24 @@ blockquote {
   }
 }
 
-.box-container {
-  .box {
-    border-radius: @gap;
+.row-container {
+  border-radius: @gap;
 
-    .box-title {
-      float: left;
-      font-weight: bold;
+  .row-title {
+    float: left;
+    font-weight: bold;
 
-    }
+  }
 
-    .box-content .year,
-    .box-content .tag {
-      margin-left: @gap;
-    }
+  .row-content .item {
+    margin-left: @gap;
+  }
 
-    .box-content form {
-      margin: @half_gap 0;
+  .row-content form {
+    margin: @half_gap 0;
 
-      input[type=text] {
-        margin-bottom: 0;
-      }
+    input[type=text] {
+      margin-bottom: 0;
     }
   }
 }
