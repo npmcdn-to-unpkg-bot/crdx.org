@@ -3,4 +3,4 @@ links = $(".nav-container a").filter(-> this.hostname != window.location.hostnam
 links.attr "target", "_blank"
 
 $(window).on "scroll", (event) ->
-    $("body").toggleClass "is-scrolled", $(window).scrollTop() > 0
+  $("body").toggleClass "is-scrolled", $(window).scrollTop() > 0
