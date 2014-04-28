@@ -13,6 +13,11 @@ I keep all my public stuff on [GitHub](https://github.com/crdx) and use [BitBuck
 Click on a project to see its page on GitHub. Hover over or tap the icon to see the latest commit.
 
 <div class="projects clearfix">
+  <a class="project" data-repo="crdx.org" href="https://github.com/crdx/crdx.org">
+    <div class="project-state"></div>
+    <div class="project-name">crdx.org</div>
+  </a>
+
   <a class="project" data-repo="ssnake" href="https://github.com/crdx/ssnake">
     <div class="project-state"></div>
     <div class="project-name">ssnake</div>
