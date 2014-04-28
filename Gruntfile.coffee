@@ -47,7 +47,7 @@ module.exports = (grunt) ->
                 compress: true
             all:
                 files:
-                    "assets/css/main.min.css": "less/main.less"
+                    "assets/css/main.min.css": "less/_.less"
 
         cssmin:
             options:

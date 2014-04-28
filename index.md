@@ -12,10 +12,7 @@ I keep all my public stuff on [GitHub](https://github.com/crdx) and use [BitBuck
 
 Click on a project to see its page on GitHub. Hover over or tap the icon to see the latest commit.
 
-<div class="projects projects-active clearfix">
-</div>
-
-<div class="projects projects-done clearfix">
+<div class="projects clearfix">
   <a class="project" data-repo="ssnake" href="https://github.com/crdx/ssnake">
     <div class="project-state"></div>
     <div class="project-name">ssnake</div>
@@ -50,9 +47,6 @@ Click on a project to see its page on GitHub. Hover over or tap the icon to see 
     <div class="project-state"></div>
     <div class="project-name">Graph</div>
   </a>
-</div>
-
-<div class="projects projects-inactive clearfix">
 </div>
 
 ## Look at this

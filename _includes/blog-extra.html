@@ -1,0 +1,35 @@
+<div class="box-container">
+  <div class="box">
+    <div class="box-content">
+      <form action="http://google.com/search" method="get">
+        <input name="sitesearch" type="hidden" value="{{ site.domain }}" />
+        <input type="text" name="q" placeholder="Search..." class="input-block-level" />
+      </form>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-title">tags</div>
+    <div class="box-content">
+      {% for tag in site.tags %}
+        <span class="tag">
+          <a href="/tags/#{{ tag[0] }}">{{ tag[0] }}</a>
+        </span> <!-- {{ tag[1].size }} -->
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="box-title">archive</div>
+    <div class="box-content">
+      {% for post in site.posts_sorted %}
+        {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% unless year == post_year %}{% assign year = post_year %}
+          <span class="year"><a href="/archive/#y{{ year }}">{{ year }}</a></span>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<hr/>

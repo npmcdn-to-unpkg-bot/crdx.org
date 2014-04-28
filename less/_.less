@@ -3,8 +3,7 @@
 @nav_height: 3em;
 @nav_collapsed_height: 2.5em;
 
-@breakpoint_content: 55em;
-@breakpoint_nav: 35em;
+@breakpoint: 30em;
 
 @radius: 1em;
 @half_radius: 0.5em;
@@ -19,7 +18,7 @@
 @content_bg: #e5e5e5;
 @content_content_bg: #fafafa;
 
-// colours for project statuses
+// colours
 @active_bg: #c09853;
 @done_bg: #468847;
 @inactive_bg: #999;
@@ -31,3 +30,12 @@
 
 @gap: 1em;
 @half_gap: @gap / 2;
+
+@import "functions.less";
+@import "things.less";
+@import "nav.less";
+@import "content.less";
+@import "post.less";
+@import "pages.less";
+
+@import "breakpoint" only screen and (max-width: @breakpoint);

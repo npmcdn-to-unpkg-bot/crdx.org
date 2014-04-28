@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/glyphicons.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/highlight.min.css" />
   </head>
-  <body{% if page.menu == "blog" %} class="has-sidebar"{% endif %}>
+  <body>
     <div class="nav-container clearfix">
       <nav class="nav">
         <ul class="nav-internal">
@@ -53,7 +53,8 @@
     </div>
 
   <div class="content-container">
-    {% if page.menu == "blog" %}{% include sidebar.html %}{% endif %}
+
+    {% if page.name == "blog" %}{% include blog-extra.html %}{% endif %}
 
     <div class="content{% if page.name %} page-{{ page.name }}{% endif %}">
       {{ content }}
