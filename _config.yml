@@ -23,4 +23,9 @@ exclude: [
 jekyll_sort:
     - src: posts
       by: date
+      direction: down
       dest: posts_sorted
+#    - src: tags
+#      by: 0
+#      direction: up
+#      dest: tags_sorted
