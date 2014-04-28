@@ -4,3 +4,8 @@ links.attr "target", "_blank"
 
 $(window).on "scroll", (event) ->
   $("body").toggleClass "is-scrolled", $(window).scrollTop() > 0
+
+#$(".js-tooltip").on "mouseover", (event) ->
+#  $(this).tooltip()
+
+$(".js-tooltip").tooltip(placement: "bottom")

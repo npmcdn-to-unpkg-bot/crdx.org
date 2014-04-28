@@ -36,17 +36,16 @@
             <a href="/about/">about</a>
           </li><li{% if page.menu == "blog" %} class="selected"{% endif %}>
             <a href="/blog/">blog</a>
-          </li><li>
-            <a href="/feed.xml" target="_blank"><i class="glyphicon-rss"></i>rss</a>
           </li>
         </ul>
 
         <ul class="nav-external">
-          <!--<li><a href="http://twitter.com" target="_blank"><i class="glyphicon-twitter"></i>twitter</a></li>-->
           <li>
-            <a href="http://github.com/crdx"><i class="glyphicon-github"></i>github</a>
+            <a href="http://github.com/crdx" title="crdx @ GitHub" class="js-tooltip"><i class="glyphicon-github"></i></a>
           </li><li>
-            <a href="http://stackoverflow.com/users/457104/crdx"><i class="glyphicon-stackoverflow"></i>stackoverflow</a>
+            <a href="http://stackoverflow.com/users/457104/crdx" title="crdx @ StackOverflow" class="js-tooltip"><i class="glyphicon-stackoverflow"></i></a>
+          </li><li>
+            <a href="/feed.xml" target="_blank" title="RSS Feed" class="js-tooltip"><i class="glyphicon-rss"></i></a>
           </li>
         </ul>
       </nav>
