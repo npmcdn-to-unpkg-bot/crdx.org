@@ -60,7 +60,7 @@ Here are some things that exist.
 
 <div class="projects clearfix">
   <a href="/misc/cookies/" class="project">
-    <div class="project-name">Netscape-format cookies file generator</div>
+    <div class="project-name">cookies file generator</div>
   </a>
 </div>
 
