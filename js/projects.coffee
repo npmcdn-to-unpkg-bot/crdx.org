@@ -59,8 +59,7 @@ $(".project").each (i, element) ->
       # store it (yes, even if it's an error message)
       $this.data "commit", tooltipMsg
 
-      # only show it if it hasn't been cancelled and we have something
-      # to show
+      # only show it if it hasn't been cancelled and we have something to show
       if not $this.data("cancel")
         setTooltip $this, tooltipMsg
 

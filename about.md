@@ -7,6 +7,6 @@ permalink: /about/
 title: about
 ---
 
-## What's wrong with this place?
+## what's wrong with this place?
 
 You can find out at [the issues page on GitHub](http://github.com/crdx/crdx.org/issues?state=open).

@@ -7,7 +7,7 @@ permalink: /blog/
 title: blog
 ---
 
-{% for page in site.posts %}
+{% for page in site.posts limit:10 %}
   <div class="post">
     {% include post-header.html %}
 
@@ -17,5 +17,7 @@ title: blog
     <hr>
   </div>
 {% endfor %}
+
+  <a href="/archive">more...</a>
 
 {% include disqus-count.html %}
