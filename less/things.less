@@ -11,11 +11,12 @@ label,
 select,
 textarea {
   font-family: "Noto Sans";
-  font-size: @font_size !important; // thanks, bootstrap!
+  font-size: @font_size;
 }
 
 body {
   background-color: @content_bg;
+  color: @text_fg;
 }
 
 a {
@@ -26,38 +27,28 @@ a {
 i.glyphicon-stackoverflow {
   background-image: url("/img/so.png");
   background-position: 0px 0px;
-  color: #33f;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
   font-weight: 700;
 }
 
 h1 {
-  font-size: 24.5px;
+  font-size: 18px;
+  margin: @hgap 0;
 }
 
 h2 {
-  font-size: 17.5px;
-}
-
-h3 {
   font-size: 14px;
 }
 
-h4 {
-  font-size: 11.9px;
-}
-
-h1.page-title {
-  margin-top: 0px;
-  border-bottom: 1px solid @header_bg;
+h3 {
+  font-size: 12px;
 }
 
 hr {
-  margin-left: 20%;
-  margin-right: 20%;
   border: 1px solid @hr_color;
+  margin: @gap 20%;
   border-bottom: 0px;
 }
 
@@ -65,6 +56,7 @@ hr {
 pre, pre > code {
   white-space: pre;
   border: 0;
+  padding: 0;
 }
 
 pre {
@@ -78,6 +70,7 @@ pre {
 pre, code {
   border-radius: @hradius;
   background-color: @content_content_bg;
+  font-family: Consolas, monospace;
 }
 
 code {
