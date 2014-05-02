@@ -17,7 +17,8 @@
   margin: 0 auto;
 
   ul {
-    margin: 0px;
+    margin: 0;
+    padding-left: 0;
     list-style-type: none;
 
     li {
@@ -42,7 +43,7 @@
     }
 
     li a {
-      padding: 0 @half_gap;
+      padding: 0 @hgap;
       display: block;
       text-decoration: none;
       line-height: @nav_height;
@@ -54,11 +55,12 @@
     }
   }
 
-  ul.nav-internal {
+  ul.nav-primary {
     float: left;
   }
 
-  ul.nav-external {
+  ul.nav-secondary {
     float: right;
+    //font-size: 1.2em;
   }
 }

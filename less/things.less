@@ -18,12 +18,21 @@ body {
   background-color: @content_bg;
 }
 
-// headings
+a {
+  text-decoration: none;
+  color: #33f;
+}
+
+i.glyphicon-stackoverflow {
+  background-image: url("/img/so.png");
+  background-position: 0px 0px;
+  color: #33f;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-// bootstrap defaults are too big, and we don't need h5 and h6 (for now)
 h1 {
   font-size: 24.5px;
 }
@@ -45,12 +54,6 @@ h1.page-title {
   border-bottom: 1px solid @header_bg;
 }
 
-// revert some headings back to their defaults
-h2, h3 {
-  line-height: normal;
-}
-
-// horizontal rule
 hr {
   margin-left: 20%;
   margin-right: 20%;
@@ -58,52 +61,75 @@ hr {
   border-bottom: 0px;
 }
 
-// bootstrap's default blue is way too common now so lighten it up a bit
-a {
-  color: lighten(blue, 10%);
-}
-
-// stackoverflow glyphicon
-i.glyphicon-stackoverflow {
-  background-image: url("/img/so.png");
-  background-position: 0px 0px;
-}
-
 // code blocks and inline code
 pre, pre > code {
   white-space: pre;
+  border: 0;
 }
 
 pre {
   border: 0px;
-  border-radius: @half_radius;
-  padding: @half_gap;
+  border-radius: @hradius;
+  padding: @hgap;
   overflow: auto;
   word-wrap: normal;
 }
 
 pre, code {
-  border-radius: @half_radius;
+  border-radius: @hradius;
   background-color: @content_content_bg;
 }
 
 code {
   color: @text_fg;
+  padding: 2px 4px;
+  white-space: nowrap;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
 }
 
-// bootstrap tooltip
-.tooltip {
-  font-size: 1em;
-}
-
-// blockquotes
 blockquote {
   border: 0;
-  padding: @gap;
-  border-radius: @half_radius;
+  margin: 0;
+  padding: @hgap;
+  border-radius: @hradius;
   background-color: @content_content_bg;
 
   p {
     font-size: 1em;
+    margin: 0;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.tooltip {
+  font-size: 1em !important;
+  padding: @qgap;
+}
+
+.form {
+  width: 100%;
+  td {
+    padding: @qgap;
+
+    &:nth-child(2) {
+      input, textarea {
+        width: 100%;
+        display: block;
+      }
+    }
   }
 }

@@ -1,0 +1,8 @@
+<!-- We're running each <li> next to each other here because otherwise an nbsp appears between each element. -->
+<li class="index{% if page.menu == "index" %} selected{% endif %}">
+  <a href="/">crdx.org</a>
+</li><li{% if page.menu == "about" %} class="selected"{% endif %}>
+  <a href="/about">about</a>
+</li><li{% if page.menu == "blog" %} class="selected"{% endif %}>
+  <a href="/blog">blog</a>
+</li>

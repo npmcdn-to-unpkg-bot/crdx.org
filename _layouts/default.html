@@ -11,35 +11,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="alternate" title="crdx.org rss feed" href="/feed.xml" type="application/rss+xml">
 
     <title>{% if page.title %}{{ page.title }} ({% endif %}{{ site.title }}{% if page.title %}){% endif %}</title>
 
-    <!-- IE8+: this must be loaded first so the HTML5 polyfill applies before the elements are actually used. -->
-    <script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
-
-    <link rel="alternate" title="crdx.org rss feed" href="/feed.xml" type="application/rss+xml">
-
-    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/qtip2/jquery.qtip.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/glyphicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/highlight.min.css" />
+
+    <script type="text/javascript" src="/bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/bower_components/qtip2/jquery.qtip.min.js"></script>
+    <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
+    <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
+    <script type="text/javascript" src="/assets/js/things.coffee.js"></script>
+    {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
+    {% if page.name == "index" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
+
   </head>
   <body>
-    <div class="nav-container clearfix">
-      <nav class="nav">
-        <ul class="nav-internal">
-          <!-- We're running each <li> next to each other here because if you
-               don't, then an nbsp appears between each element. -->
-          <li class="index{% if page.menu == "index" %} selected{% endif %}">
-            <a href="/">crdx.org</a>
-          </li><li{% if page.menu == "about" %} class="selected"{% endif %}>
-            <a href="/about/">about</a>
-          </li><li{% if page.menu == "blog" %} class="selected"{% endif %}>
-            <a href="/blog/">blog</a>
-          </li>
+    <div class="nav-container cf">
+      <nav class="nav cf">
+        <ul class="nav-primary">
+          {% include nav-primary.html %}
         </ul>
 
-        <ul class="nav-external">
+        <ul class="nav-secondary">
           <li>
             <a href="http://github.com/crdx" title="crdx @ GitHub" class="js-tooltip"><i class="glyphicon-github"></i></a>
           </li><li>
@@ -57,15 +56,6 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
-
-  <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
-  <script type="text/javascript" src="/assets/js/things.coffee.js"></script>
-  {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
-  {% if page.name == "index" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
-
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(["_setAccount", "UA-35469939-3"]);
@@ -82,4 +72,5 @@
 
   </body>
 </html>
+
 
