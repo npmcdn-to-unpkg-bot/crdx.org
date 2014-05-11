@@ -13,7 +13,7 @@ title: blog
 
     <div class="post-content">{{ page.content }}</div>
 
-    <div class="post-comments"><a href="{{ page.url }}#disqus_thread"></a></div>
+    <div class="post-comments"><a href="{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.disqus_id }}"></a></div>
     <hr>
   </div>
 {% endfor %}

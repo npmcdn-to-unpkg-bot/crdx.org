@@ -1,7 +1,5 @@
 <script type="text/javascript">
   var disqus_shortname = "crdx";
-  var disqus_url = "{{ site.url }}{{ page.url }}";
-  var disqus_identifier = "{{ page.disqus_id }}";
 
   (function ()
   {
@@ -9,6 +7,6 @@
     s.async = true;
     s.type = 'text/javascript';
     s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
   }());
 </script>
