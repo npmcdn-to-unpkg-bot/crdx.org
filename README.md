@@ -19,7 +19,7 @@ This is the source of [crdx.org](http://crdx.org) which is currently powered by 
 
 Build the website, and then watch for changes and rebuild when they change. Pass `--drafts` to include draft posts.
 
-Additionally, a livereload server will start on [http://localhost:9001](localhost:9001).
+Additionally, a livereload server will start on [localhost:9001](http://localhost:9001).
 
 ### Build
 
