@@ -154,7 +154,10 @@ module.exports = (grunt) ->
     "regarde"
   ]
 
-  grunt.registerTask "watch", "lr"
+  grunt.registerTask "watch", [
+    "build"
+    "lr"
+  ]
 
   # aliases
   grunt.registerTask "b", "build"
