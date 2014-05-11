@@ -65,36 +65,33 @@ module.exports = (grunt) ->
         dest: "assets/"
 
     jekyll:
-      drafts:
+      all:
         options:
-          drafts: true
-      production:
-        options:
-          drafts: false
+          drafts: grunt.option("drafts")
 
     regarde:
       coffee:
         files: "js/*.coffee"
-        tasks: ["coffee:all", "jekyll:production", "livereload"]
+        tasks: ["coffee", "jekyll", "livereload"]
       less:
         files: "less/*.less"
-        tasks: ["less:all", "jekyll:production", "livereload"]
+        tasks: ["less", "jekyll", "livereload"]
       cssmin:
         files: "css/*.css"
-        tasks: ["cssmin:all", "jekyll:production", "livereload"]
+        tasks: ["cssmin", "jekyll", "livereload"]
       uglify:
         files: "js/*.js"
-        tasks: ["uglify:all", "jekyll:production", "livereload"]
+        tasks: ["uglify", "jekyll", "livereload"]
       images:
         files: "img/*"
-        tasks: ["copy:images", "jekyll:production", "livereload"]
+        tasks: ["copy", "jekyll", "livereload"]
       jekyll:
         files: [
           "*", # individual files in the root
           "_{drafts,includes,layouts,plugins,posts}/**"     # all of jekyll's _underscore directories (except _site!)
           "misc/**"                                         # all of misc
         ]
-        tasks: ["jekyll:production", "livereload"]
+        tasks: ["jekyll", "livereload"]
 
   matchdep.filter("grunt-*").forEach (pkg) ->
     console.log "Loading #{pkg}"
@@ -129,6 +126,14 @@ module.exports = (grunt) ->
       if grunt.file.isMatch(grunt.config("regarde.#{task}.files"), filePath)
         grunt.config "#{task}.all.src", filePath
 
+  # live reload
+  grunt.registerTask "lr", [
+    "livereload-start"
+    "connect"
+    "regarde"
+  ]
+
+  # public tasks
   grunt.registerTask "assets", [
     "coffee"            # *.coffee -> *.js
     "uglify"            # *.js     -> *.min.js
@@ -137,21 +142,9 @@ module.exports = (grunt) ->
     "copy:images"
   ]
 
-  grunt.registerTask "drafts", [
-    "assets"
-    "jekyll:drafts"
-  ]
-
   grunt.registerTask "build", [
     "assets"
-    "jekyll:production"
-  ]
-
-  # live reload
-  grunt.registerTask "lr", [
-    "livereload-start"
-    "connect"
-    "regarde"
+    "jekyll"
   ]
 
   grunt.registerTask "watch", [
@@ -164,4 +157,5 @@ module.exports = (grunt) ->
   grunt.registerTask "w", "watch"
 
   # default task
-  grunt.registerTask "default", "watch"
+  grunt.registerTask "default", ->
+    console.log "Please use either w (watch) or b (build). Pass --drafts to enable draft posts."
