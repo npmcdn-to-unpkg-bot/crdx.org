@@ -17,14 +17,18 @@
 
     <link rel="stylesheet" type="text/css" href="/bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/bower_components/qtip2/jquery.qtip.min.css">
+    <link rel="stylesheet" type="text/css" href="/bower_components/prismjs/prism.css" />
+    <link rel="stylesheet" type="text/css" href="/bower_components/prismjs/plugins/line-numbers/prism-line-numbers.css" />
     <link rel="stylesheet" type="text/css" href="/assets/css/glyphicons.min.css" />
+
     <link rel="stylesheet" type="text/css" href="/assets/css/main.min.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/highlight.min.css" />
 
     <script type="text/javascript" src="/bower_components/modernizr/modernizr.js"></script>
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/qtip2/jquery.qtip.min.js"></script>
-    <script type="text/javascript" src="/assets/js/highlight.min.js"></script>
+    <script type="text/javascript" src="/bower_components/prismjs/prism.js"></script>
+    <script type="text/javascript" src="/bower_components/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+
     <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
     <script type="text/javascript" src="/assets/js/things.coffee.js"></script>
     {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
@@ -66,8 +70,6 @@
         ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
         var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
     })();
-
-    hljs.initHighlightingOnLoad();
   </script>
 
   </body>
