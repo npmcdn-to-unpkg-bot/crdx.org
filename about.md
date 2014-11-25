@@ -1,6 +1,6 @@
 ---
 layout: default
-name: about
+key: about
 menu: about
 permalink: /about/
 

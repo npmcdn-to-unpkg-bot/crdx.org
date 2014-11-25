@@ -31,8 +31,8 @@
 
     <script type="text/javascript" src="/assets/js/util.coffee.js"></script>
     <script type="text/javascript" src="/assets/js/things.coffee.js"></script>
-    {% if page.name == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
-    {% if page.name == "index" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
+    {% if page.key == "cookies" %}<script type="text/javascript" src="/assets/js/cookies.coffee.js"></script>{% endif %}
+    {% if page.key == "index" %}<script type="text/javascript" src="/assets/js/projects.coffee.js"></script>{% endif %}
 
   </head>
   <body>
@@ -55,7 +55,7 @@
     </div>
 
   <div class="content-container">
-    <div class="content{% if page.name %} page-{{ page.name }}{% endif %}">
+    <div class="content{% if page.key %} page-{{ page.key }}{% endif %}">
       {{ content }}
     </div>
   </div>
