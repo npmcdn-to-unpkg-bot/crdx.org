@@ -1,0 +1,1541 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vacanc",
+				"vacancy_id"
+			],
+			[
+				"document",
+				"documentlibrary"
+			],
+			[
+				"applica",
+				"applicationIds"
+			],
+			[
+				"obj",
+				"objPHPExcel"
+			],
+			[
+				"appl",
+				"application"
+			],
+			[
+				"feedback",
+				"feedback_statuses"
+			],
+			[
+				"updatepas",
+				"updatePastVISInterviews"
+			],
+			[
+				"instr",
+				"instruction"
+			],
+			[
+				"distint",
+				"distinct_vids"
+			],
+			[
+				"distinct",
+				"distinct_vids"
+			],
+			[
+				"distin",
+				"distinct_vids"
+			],
+			[
+				"interviewfeed",
+				"interviewFeedbackId"
+			],
+			[
+				"interviewFeed",
+				"interviewFeedbackId"
+			],
+			[
+				"Interviewfeedb",
+				"interviewFeedback"
+			],
+			[
+				"application",
+				"applicationFileUploader"
+			],
+			[
+				"hiringMana",
+				"hiringManagerIds"
+			],
+			[
+				"option",
+				"option_id"
+			],
+			[
+				"managed",
+				"managedVisibilityCheck"
+			],
+			[
+				"current",
+				"current_salary"
+			],
+			[
+				"selec",
+				"selected_hospitals"
+			],
+			[
+				"__back",
+				"__backup_files"
+			],
+			[
+				"complete",
+				"complete_csv"
+			],
+			[
+				"data_",
+				"data_json"
+			],
+			[
+				"interview",
+				"interview_error"
+			],
+			[
+				"inte",
+				"interview_error"
+			],
+			[
+				"selected",
+				"selectedWidget"
+			],
+			[
+				"selecte",
+				"selectedWidgetName"
+			],
+			[
+				"availa",
+				"availableWidgets"
+			],
+			[
+				"module",
+				"module"
+			],
+			[
+				"module_",
+				"module_filename"
+			],
+			[
+				"config",
+				"config_file"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/sean/Dropbox/code/web/ws/css/style.css",
+			"settings":
+			{
+				"buffer_size": 326,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/sean/Dropbox/code/web/ws/js/Client.js",
+			"settings":
+			{
+				"buffer_size": 1034,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/sean/Dropbox/code/web/ws/js/UI.js",
+			"settings":
+			{
+				"buffer_size": 1674,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 160.0,
+		"last_filter": "javascr",
+		"selected_items":
+		[
+			[
+				"javascr",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"preference",
+				"Preferences: Settings - User"
+			],
+			[
+				"project",
+				"Project: Add Folder"
+			],
+			[
+				"projec",
+				"Project: Save As"
+			],
+			[
+				"open bro",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"word wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"refresh",
+				"Project: Refresh Folders"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"word wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"markdown prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"syntax markdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"handleba",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"syntax html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ember",
+				"Set Syntax: EmberScript"
+			],
+			[
+				"syntax javasc",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"syntax javs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax reac",
+				"Set Syntax: React Templates"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"generic",
+				"Set Syntax: Generic Config"
+			],
+			[
+				"revert",
+				"File: Revert"
+			],
+			[
+				"synta shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"wod wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"format",
+				"CodeFormatter: Format as PHP Syntax"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"prefe",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefere",
+				"Preferences: Settings - User"
+			],
+			[
+				"markdown ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"set syn js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pref user",
+				"Preferences: Settings - User"
+			],
+			[
+				"javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"refres",
+				"Project: Refresh Folders"
+			],
+			[
+				"folder",
+				"Project: Refresh Folders"
+			],
+			[
+				"add folder",
+				"Project: Add Folder"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"preferen",
+				"Preferences: Settings - User"
+			],
+			[
+				"font",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"delete trai",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"javascri",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"makrdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"trailing",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"syntax shell",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"makdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"WRAP",
+				"Word Wrap: Toggle"
+			],
+			[
+				"config",
+				"Set Syntax: Generic Config"
+			],
+			[
+				"onfig",
+				"Set Syntax: Generic Config"
+			],
+			[
+				"yaml",
+				"Set Syntax: YAML"
+			],
+			[
+				"confi",
+				"Set Syntax: Generic Config"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"reindein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"markdown pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wod",
+				"Word Wrap: Toggle"
+			],
+			[
+				"word wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"user ",
+				"Preferences: Settings - User"
+			],
+			[
+				"prefer",
+				"Preferences: Settings - Default"
+			],
+			[
+				"syntax ",
+				"Set Syntax: Rust"
+			],
+			[
+				"smarty",
+				"Set Syntax: Smarty"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"add fold",
+				"Project: Add Folder"
+			],
+			[
+				"trailin",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"shell sc",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"markdownp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"syntax cofc",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"prefer euser",
+				"Preferences: Settings - User"
+			],
+			[
+				"PREVIEW",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"key bin",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"settings",
+				"Preferences: Settings - User"
+			],
+			[
+				"generic ",
+				"Set Syntax: Generic Config"
+			]
+		],
+		"width": 476.0
+	},
+	"console":
+	{
+		"height": 156.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/sean/Dropbox/code/web/ws",
+		"/home/sean/Dropbox/code/web/ws/css",
+		"/home/sean/Dropbox/code/web/ws/js",
+		"/home/sean/Dropbox/code/web/ws/templates"
+	],
+	"file_history":
+	[
+		"/home/sean/Dropbox/code/web/ws/templates/index.tpl",
+		"/home/sean/Dropbox/code/web/ws/js/init.js",
+		"/home/sean/Dropbox/code/web/ws/js/Client.js",
+		"/home/sean/Dropbox/code/web/ws/Broadcaster.php",
+		"/home/sean/Dropbox/code/web/ws/ws.php",
+		"/home/sean/Dropbox/code/web/ws/init.php",
+		"/home/sean/Dropbox/code/web/ws/errors.php",
+		"/home/sean/Dropbox/code/web/ws/errors.phperror_reporting(E_ALL | E_STRICT);",
+		"/home/sean/.ssh/config",
+		"/home/sean/Dropbox/code/web/ws/templates/footer.tpl",
+		"/home/sean/Dropbox/code/web/ws/js/Util.js",
+		"/home/sean/Dropbox/code/web/ws/js/Storage.js",
+		"/home/sean/Dropbox/code/web/ws/js/UI.js",
+		"/home/sean/Dropbox/code/web/ws/Chat.php",
+		"/home/sean/Dropbox/code/web/ws/css/style.css",
+		"/home/sean/Dropbox/code/web/ws/.gitignore",
+		"/home/sean/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/sean/Dropbox/code/web/ws/templates/header.tpl",
+		"/home/sean/Dropbox/code/web/ws/vendor/smarty/smarty/libs/Autoloader.php",
+		"/home/sean/Dropbox/code/web/ws/vendor/smarty/smarty/libs/Smarty.class.php",
+		"/home/sean/Dropbox/code/web/ws/index.php",
+		"/home/sean/Dropbox/code/web/ws/composer.json",
+		"/home/sean/Dropbox/code/web/ws/vendor/cboden/ratchet/src/Ratchet/Http/HttpServer.php",
+		"/home/sean/Dropbox/code/web/ws/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php",
+		"/home/sean/Dropbox/code/web/ws/vendor/cboden/ratchet/src/Ratchet/WebSocket/WsServer.php",
+		"/home/sean/Dropbox/code/web/ws/vendor/cboden/ratchet/src/Ratchet/Http/HttpServerInterface.php",
+		"/home/sean/Dropbox/code/web/ws/vendor/cboden/ratchet/src/Ratchet/MessageComponentInterface.php",
+		"/home/sean/Dropbox/code/web/ws/vendor/guzzle/http/Guzzle/Http/Message/MessageInterface.php",
+		"/home/sean/Dropbox/code/web/ws.php",
+		"/home/sean/Dropbox/code/web/index.php",
+		"/home/sean/Dropbox/code/web/crdx.org/index.html",
+		"/home/sean/MeanApp/packages/custom/Test/app.js",
+		"/home/sean/MeanApp/Dockerfile",
+		"/home/sean/MeanApp/app.js",
+		"/home/sean/MeanApp/packages/custom/MeanApp/public/tests/example.js",
+		"/srv/remote/dev.bellaitaliacareers.co.uk/fetch_closing_dates.php",
+		"/srv/remote/dev.bellaitaliacareers.co.uk/harbour/includes/clientsite/geosearch.php",
+		"/srv/remote/dev.bellaitaliacareers.co.uk/harbour/includes/clientsite.php",
+		"/srv/remote/dev.bellaitaliacareers.co.uk/templates/geosearch.tpl",
+		"/media/sean/GARMIN/Garmin/geocache_visits.txt",
+		"/media/sean/SDCARD/Garmin/list-pq.sh",
+		"/media/sean/SDCARD/Garmin/dl-pq.sh",
+		"/media/sean/SDCARD/Garmin/dl-map.sh",
+		"/media/sean/GARMIN/Garmin/geocache_logs.xml",
+		"/media/sean/SDCARD/Garmin/README.TXT",
+		"/media/sean/SDCARD/Garmin/GPX/@list-pocket-queries.bat",
+		"/media/sean/SDCARD/Garmin/Get Download URL.url",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/gardensandgrounds.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/accommodation.php",
+		"/media/sean/SDCARD/Garmin/download_url.bat",
+		"/media/sean/SDCARD/Garmin/dl.sh",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/albums/The-Cottage/bar_bedroom.JPG",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/bower.json",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/Captcha.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/towerroom.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/stablerooms.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/header.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/contact.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/poolroom.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/index.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/thecottage.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/corralrooms.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/saddlerooms.php",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/init.php",
+		"/etc/apache2/sites-available/000-default.conf",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/composer.json",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/.gitignore",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/.gitignore",
+		"/home/sean/Dropbox/code/web/elcortijodeloscaballos.com/htdocs/composer.lock",
+		"/home/sean/Dropbox/code/web/sites.html",
+		"/srv/remote/nl/harbour/includes/FullTextConverter.php",
+		"/srv/remote/nl/harbour/controllers/Search/index.php",
+		"/srv/remote/nl/composer.lock",
+		"/srv/remote/nl/harbour/includes/PanDBSearch.php",
+		"/home/sean/tmp/964e46f9fe2b688016a2/arseface.rb",
+		"/srv/remote/lg/harbour/includes/models/Application.php",
+		"/srv/remote/lg/harbour/includes/General.php",
+		"/srv/remote/lg/harbour/includes/models/Vacancy.php",
+		"/srv/remote/lg/harbour/includes/models/TalentBanker.php",
+		"/srv/remote/lg/harbour/includes/ReportCommon.php",
+		"/srv/remote/lg/harbour/includes/models/VacancyField.php",
+		"/srv/remote/lg/harbour/views/vacancies/manage.tpl",
+		"/srv/remote/lg/harbour/views/vacancies/edit.tpl",
+		"/srv/remote/lg/harbour/views/vacancyauth/manage.tpl",
+		"/srv/remote/lg/harbour/views/vacancyauth/edit.tpl",
+		"/srv/remote/lg/harbour/views/stats/open_vn.tpl",
+		"/srv/remote/lg/harbour/helpers/HarbourObject.php",
+		"/srv/remote/lg/harbour/controllers/VacancyAuth/index.php",
+		"/srv/remote/lg/harbour/controllers/Vacancies/Applications/index.php",
+		"/home/sean/FileUploader.md",
+		"/srv/remote/lg/harbour/views/vacancies/applications/profile_parts/test.tpl",
+		"/home/sean/Dropbox/programs/IRC",
+		"/home/sean/clients/mIRC",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/templates/components/rental-listing.hbs",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/templates/components/filter-listing.hbs",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/templates/index.hbs",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/components/filter-listing.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/components/rental-listing.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/helpers/rental-property-type.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/tests/unit/routes/about-test.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/templates/about.hbs",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/templates/contact.hbs",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/models/rental.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/mirage/config.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/routes/index.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/routes/about.js",
+		"/tmp/tmp.5wkEmw0Ah0/thing/app/templates/application.hbs",
+		"/tmp/tmp.cm37xHSYWR/index.js",
+		"/tmp/tmp.cm37xHSYWR/node_modules/node-fetch/CHANGELOG.md",
+		"/tmp/tmp.cm37xHSYWR/index.html",
+		"/tmp/tmp.cm37xHSYWR/package.json",
+		"/tmp/tmp.W2yOtSnuPJ/package.json",
+		"/tmp/tmp.W2yOtSnuPJ/main.js",
+		"/home/sean/Dropbox/notes/main.md",
+		"/home/sean/tmp/reactjs/index.html",
+		"/home/sean/tmp/reactjs/main.js",
+		"/home/sean/tmp/reactjs/bundle.js",
+		"/home/sean/tmp/reactjs/package.json",
+		"/home/sean/Dropbox/code/web/treenode.org/htdocs/composer.json",
+		"/home/sean/Dropbox/code/web/treenode.org/init.php",
+		"/home/sean/Dropbox/code/web/treenode.org/templates/index.tpl",
+		"/home/sean/Dropbox/code/web/treenode.org/.gitignore",
+		"/home/sean/Dropbox/code/web/treenode.org/htdocs/composer.lock",
+		"/home/sean/Dropbox/code/web/treenode.org/htdocs/.htaccess",
+		"/home/sean/Dropbox/code/web/treenode.org/htdocs/g/1349126618/ambulance/boundary/index.php",
+		"/home/sean/Dropbox/code/web/treenode.org/htdocs/index.php",
+		"/home/sean/Dropbox/code/web/treenode.org/htdocs/init.php",
+		"/home/sean/Dropbox/code/web/treenode.org/htdocs/g/1349126618/ambulance/boundary/crocodile/pedestrian/.gitignore"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			"",
+			"/mnt/stinger/node-sonos-http-api/lib",
+			"/mnt/stinger/node-sonos-http-api",
+			"/mnt/stinger/node-sonos-web-controller/static",
+			"",
+			"/mnt/stinger/node-sonos-web-controller/static",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"onClose",
+			"onOpen",
+			"call",
+			"self",
+			"this",
+			"call",
+			" = function",
+			"$conn",
+			"numRecv",
+			"$conn",
+			"conn",
+			"MyApp",
+			"name",
+			"Name",
+			"name",
+			"Name",
+			"name",
+			"oldName",
+			"onNameChange",
+			"name_change",
+			"set_name",
+			"messageContent",
+			"fromName",
+			"anonymous_",
+			"self",
+			"o",
+			"self",
+			"statusBox",
+			"'",
+			"'disconnected",
+			"this",
+			"$name",
+			"$input",
+			"window",
+			"$window",
+			"window",
+			".val(",
+			"val()",
+			"attachEventListener",
+			".on",
+			"name",
+			"input",
+			"window",
+			"output",
+			"$output",
+			"$(\"#output\")",
+			"Settings",
+			";",
+			"localSettings",
+			"Storage",
+			"name",
+			"Name",
+			"name",
+			"Name",
+			"name",
+			"Name",
+			"name",
+			"Name",
+			"name",
+			"Name",
+			"name",
+			"$(\"#output\")",
+			"input",
+			"UI",
+			"UI.",
+			"$input",
+			"message",
+			"from",
+			"var $",
+			"div",
+			"obj",
+			"name",
+			"fromName",
+			"'",
+			"obj",
+			"send",
+			"socket",
+			"conn",
+			"Conn",
+			"conn",
+			"out",
+			"--",
+			"data-frame=\"albums/Lounge-Bar/lounge-bar-0",
+			"flexible_dates",
+			"_POST",
+			"data-frame=\"albums/Saddle-Rooms/elcortij",
+			"title=\"Saddle Rooms",
+			"title=\"Tower Room",
+			"data-frame=\"albums/Tower-Room/towerroom-",
+			"data-frame=\"albums/Tower-Room/Towerroom-",
+			"title=\"Stable Rooms Image ",
+			"elcortijo_0023",
+			"title=\"Stable Rooms Image",
+			" data-description=\"Our Stable Rooms are one bedroom studios with kitchenette, lounge and dining area and bedroom with Queen size bed and en suite. Each room has its own private terrace for dining and sunbathing.\"",
+			"data-description=\"Our Stable Rooms are one bedroom studios with kitchenette, lounge and dining area and bedroom with Queen size bed and en suite. Each room has its own private terrace for dining and sunbathing.\" />",
+			"data-frame=\"albums/Stable-Room",
+			"data-frame=\"albums/Stable-Rooms/Cortijo de los Caballos",
+			"alt=\"\"",
+			"title",
+			"title=\"Corral Rooms 6\"",
+			"albums/Pool-Room/Pool-Room-1.jpg",
+			"·         ",
+			"data-description=\"We have 3 Corral rooms which are 1 bedroom apartments. Each apartment is individual, with some being split level and some having private rear terraces as well as front ones. They come with a kitchen and lounge area, queen size beds and en suites with double sinks, baths and walk in showers.\"",
+			"jpg",
+			" data-description=\"A solitary getaway at El Cortijo de los Caballos \"",
+			"blah",
+			"the-cottage-1",
+			"the-cottage-",
+			"vendor",
+			"fulltext",
+			"$key",
+			"translateboo",
+			"$new",
+			"var_dump",
+			"$this->process(",
+			"$this->root",
+			"current_index",
+			"boolean mode",
+			"notes",
+			"second",
+			"first",
+			"note_groups",
+			"$b",
+			"a",
+			"title",
+			"note",
+			"aligned_post_ids",
+			"from"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"  ",
+			"",
+			"box--vacancy-search",
+			"Widget",
+			"key: ",
+			"key:",
+			"print"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/sean/Dropbox/code/web/ws/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/sean/Dropbox/code/web/ws/js/Client.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/sean/Dropbox/code/web/ws/js/UI.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1674,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 307.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 399.0
+	},
+	"pinned_build_system": "",
+	"project": "crdx.org.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ws.",
+				"ws.php"
+			],
+			[
+				"",
+				"Chat.php"
+			],
+			[
+				"index.tpl",
+				"templates/index.tpl"
+			],
+			[
+				"ws.p",
+				"ws.php"
+			],
+			[
+				"ratchet/wsserver",
+				"vendor/cboden/ratchet/src/Ratchet/WebSocket/WsServer.php"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"tests/example.js",
+				"packages/custom/MeanApp/public/tests/example.js"
+			],
+			[
+				"geosearcht",
+				"templates/geosearch.tpl"
+			],
+			[
+				"clientsite",
+				"harbour/includes/clientsite.php"
+			],
+			[
+				"geosearch",
+				"harbour/includes/clientsite/geosearch.php"
+			],
+			[
+				"fetch_",
+				"fetch_closing_dates.php"
+			],
+			[
+				"accommoda",
+				"htdocs/accommodation.php"
+			],
+			[
+				"gardens",
+				"htdocs/gardensandgrounds.php"
+			],
+			[
+				"grounds",
+				"htdocs/gardensandgrounds.php"
+			],
+			[
+				"bar.jpg",
+				"htdocs/albums/The-Cottage/bar_bedroom.JPG"
+			],
+			[
+				"contact",
+				"htdocs/contact.php"
+			],
+			[
+				"bower",
+				"htdocs/bower.json"
+			],
+			[
+				"header",
+				"htdocs/header.php"
+			],
+			[
+				"towerroo",
+				"htdocs/towerroom.php"
+			],
+			[
+				"saddle",
+				"htdocs/saddlerooms.php"
+			],
+			[
+				"tower",
+				"htdocs/towerroom.php"
+			],
+			[
+				"stable",
+				"htdocs/stablerooms.php"
+			],
+			[
+				"cottae",
+				"htdocs/thecottage.php"
+			],
+			[
+				"cottage",
+				"htdocs/thecottage.php"
+			],
+			[
+				"poolroom",
+				"htdocs/poolroom.php"
+			],
+			[
+				"corral",
+				"htdocs/corralrooms.php"
+			],
+			[
+				"rooms",
+				"htdocs/saddlerooms.php"
+			],
+			[
+				"contact.php",
+				"htdocs/contact.php"
+			],
+			[
+				"gitignore",
+				".gitignore"
+			],
+			[
+				"composerlock",
+				"htdocs/composer.lock"
+			],
+			[
+				"composer.json",
+				"htdocs/composer.json"
+			],
+			[
+				"iit",
+				"htdocs/init.php"
+			],
+			[
+				"fullte",
+				"harbour/includes/FullTextConverter.php"
+			],
+			[
+				"search/idex",
+				"harbour/controllers/Search/index.php"
+			],
+			[
+				"footer",
+				"htdocs/footer.php"
+			],
+			[
+				"search/index",
+				"harbour/controllers/Search/index.php"
+			],
+			[
+				"pandbsearc",
+				"harbour/includes/PanDBSearch.php"
+			],
+			[
+				"location",
+				"htdocs/location.php"
+			],
+			[
+				"reportcomm",
+				"harbour/includes/ReportCommon.php"
+			],
+			[
+				"general",
+				"harbour/includes/General.php"
+			],
+			[
+				"vacancy.php",
+				"harbour/includes/models/Vacancy.php"
+			],
+			[
+				"reportcommon",
+				"harbour/includes/ReportCommon.php"
+			],
+			[
+				"talentbanker",
+				"harbour/includes/models/TalentBanker.php"
+			],
+			[
+				"vacancies/manage",
+				"harbour/views/vacancies/manage.tpl"
+			],
+			[
+				"openvn",
+				"harbour/views/stats/open_vn.tpl"
+			],
+			[
+				"vacancyfield",
+				"harbour/includes/models/VacancyField.php"
+			],
+			[
+				"vacancies/edit.tpl",
+				"harbour/views/vacancies/edit.tpl"
+			],
+			[
+				"vacancyauth/edit.tpl",
+				"harbour/views/vacancyauth/edit.tpl"
+			],
+			[
+				"vacancyauth/manage",
+				"harbour/views/vacancyauth/manage.tpl"
+			],
+			[
+				"vacancyauth/inde",
+				"harbour/controllers/VacancyAuth/index.php"
+			],
+			[
+				"manage.tpl",
+				"harbour/views/vacancies/manage.tpl"
+			],
+			[
+				"openvn.tpl",
+				"harbour/views/stats/open_vn.tpl"
+			],
+			[
+				"stats/index",
+				"harbour/controllers/Stats/index.php"
+			],
+			[
+				"apps/index",
+				"harbour/controllers/Vacancies/Applications/index.php"
+			],
+			[
+				"profileparts/test.tpl",
+				"harbour/views/vacancies/applications/profile_parts/test.tpl"
+			],
+			[
+				"visinterviews.php",
+				"harbour/includes/clientsite/visinterviews.php"
+			],
+			[
+				"indexhbs",
+				"app/templates/index.hbs"
+			],
+			[
+				"rentalhbs",
+				"app/templates/components/rental-listing.hbs"
+			],
+			[
+				"rental-listing.js",
+				"app/components/rental-listing.js"
+			],
+			[
+				"rentallistinghbs",
+				"app/templates/components/rental-listing.hbs"
+			],
+			[
+				"rentallisting",
+				"app/components/rental-listing.js"
+			],
+			[
+				"index.hbs",
+				"app/templates/index.hbs"
+			],
+			[
+				"index.js",
+				"app/routes/index.js"
+			],
+			[
+				"about-test",
+				"tests/unit/routes/about-test.js"
+			],
+			[
+				"app.hbs",
+				"app/templates/application.hbs"
+			],
+			[
+				"about.hbs",
+				"app/templates/about.hbs"
+			],
+			[
+				"routes/about",
+				"app/routes/about.js"
+			],
+			[
+				"node-fetch",
+				"node_modules/node-fetch/CHANGELOG.md"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"detox",
+				"htdocs/detox.php"
+			],
+			[
+				"bundle",
+				"bundle.js"
+			],
+			[
+				"htaccess",
+				"htdocs/.htaccess"
+			],
+			[
+				"init.php",
+				"htdocs/init.php"
+			],
+			[
+				"header.",
+				"htdocs/header.php"
+			],
+			[
+				"onboarding.php",
+				"harbour/includes/clientsite/onboarding.php"
+			],
+			[
+				"onboardingapplication",
+				"harbour/includes/models/OnboardingApplication.php"
+			],
+			[
+				"visinterviews",
+				"harbour/includes/clientsite/visinterviews.php"
+			],
+			[
+				"cron/index",
+				"harbour/controllers/Cron/index.php"
+			],
+			[
+				"mod/applica",
+				"harbour/includes/models/Application.php"
+			],
+			[
+				"functions.js",
+				"harbour/themes/default/javascript/functions.js"
+			],
+			[
+				"actionmenu",
+				"harbour/views/vacancies/action_menu.tpl"
+			],
+			[
+				"mod/app",
+				"harbour/includes/models/Application.php"
+			],
+			[
+				"applicationstatus",
+				"harbour/includes/models/ApplicationStatus.php"
+			],
+			[
+				"visinterview",
+				"harbour/includes/clientsite/visinterviews.php"
+			],
+			[
+				"visslot",
+				"harbour/includes/models/VISSlot.php"
+			],
+			[
+				"vacnacyinterviewscheduler",
+				"harbour/controllers/VacancyInterviewScheduler/index.php"
+			],
+			[
+				"styles.css",
+				"harbour/themes/default/css/styles.css"
+			],
+			[
+				"vacancies/index",
+				"harbour/controllers/Vacancies/index.php"
+			],
+			[
+				"actionmenuinlie",
+				"harbour/views/vacancies/applications/action_menu_inline.tpl"
+			],
+			[
+				"ac",
+				"images/AberCF1.JPG"
+			],
+			[
+				"giss",
+				"harbour/includes/models/GISSlot.php"
+			],
+			[
+				"mod/app.",
+				"harbour/includes/models/Application.php"
+			],
+			[
+				"mod/application",
+				"harbour/includes/models/Application.php"
+			],
+			[
+				"vacncies/edit",
+				"harbour/views/vacancies/edit.tpl"
+			],
+			[
+				"application.php",
+				"harbour/includes/models/Application.php"
+			],
+			[
+				"vacancyauth/edit",
+				"harbour/views/vacancyauth/edit.tpl"
+			],
+			[
+				"vacancyauth/index",
+				"harbour/controllers/VacancyAuth/index.php"
+			],
+			[
+				"vreq",
+				"harbour/includes/clientsite/vreq.php"
+			],
+			[
+				"vacancyaith",
+				"harbour/includes/models/VacancyAuthorisation.php"
+			],
+			[
+				"apply.tpl",
+				"templates/apply.tpl"
+			],
+			[
+				"vacancyauthorisation",
+				"harbour/includes/models/VacancyAuthorisation.php"
+			],
+			[
+				"vauth.php",
+				"harbour/includes/clientsite/vauth.php"
+			],
+			[
+				"divisionhelper",
+				"harbour/helpers/DivisionHelper.php"
+			],
+			[
+				"apply.php",
+				"harbour/includes/clientsite/apply.php"
+			],
+			[
+				"redeployment/register",
+				"frontend/includes/pages/redeployment/register.tpl"
+			],
+			[
+				"vac/index",
+				"harbour/controllers/Vacancies/index.php"
+			],
+			[
+				"models/app",
+				"harbour/includes/models/Application.php"
+			],
+			[
+				"clientsite.php",
+				"harbour/includes/clientsite.php"
+			],
+			[
+				"vac/app/index",
+				"harbour/controllers/Vacancies/Applications/index.php"
+			],
+			[
+				"templates/interview",
+				"templates/interview_booking.tpl"
+			],
+			[
+				"interviews.php",
+				"harbour/includes/clientsite/interviews.php"
+			],
+			[
+				"vacancyauth/",
+				"harbour/views/vacancyauth/edit.tpl"
+			],
+			[
+				"feedback_table",
+				"harbour/views/vacancies/feedback_table.tpl"
+			],
+			[
+				"vacnacyauth/view",
+				"harbour/views/vacancyauth/view.tpl"
+			],
+			[
+				"application",
+				"harbour/includes/models/Application.php"
+			],
+			[
+				"apps/list.tpl",
+				"harbour/views/vacancies/applications/list.tpl"
+			],
+			[
+				"action_menu_onboard",
+				"harbour/views/onboarding/applications/action_menu_onboarding.tpl"
+			],
+			[
+				"actionmenuinline",
+				"harbour/views/vacancies/applications/action_menu_inline.tpl"
+			],
+			[
+				"hgo/config",
+				".hgo/config"
+			],
+			[
+				"formhelper",
+				"harbour/helpers/FormHelper.php"
+			],
+			[
+				"form.php",
+				"harbour/includes/models/Form.php"
+			],
+			[
+				"vacancies.tpl",
+				"frontend/includes/page_includes/vacancies.tpl"
+			],
+			[
+				"vacancies.php",
+				"harbour/includes/clientsite/vacancies.php"
+			],
+			[
+				"harbour_display_field",
+				"harbour/includes/smarty/plugins/function.harbour_display_field.php"
+			],
+			[
+				"approle",
+				"harbour/views/stats/apps_role.tpl"
+			],
+			[
+				"dashboard/index",
+				"harbour/controllers/Dashboard/index.php"
+			],
+			[
+				"harbour/index",
+				"harbour/index.php"
+			],
+			[
+				"document/index",
+				"harbour/views/documentlibrary/index.tpl"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
